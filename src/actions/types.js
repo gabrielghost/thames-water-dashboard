@@ -1,0 +1,5 @@
+export const FETCH_DATA = 'fetch_data'
+export const INITIALIZE = 'initialize'
+export const GRAPH_WEEK = 'graph_week'
+export const GRAPH_MONTH = 'graph_month'
+export const GRAPH_ALL_TIME = 'graph_all_time'

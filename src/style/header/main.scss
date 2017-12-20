@@ -1,0 +1,110 @@
+nav{
+  background-color: grey;
+
+}
+.navbar{
+  height: 100%;
+  clear:both;
+}
+.navbar ul li{
+  position: relative;
+  // border: solid 1px black;
+  width: 325px;
+  height: 100%;
+}
+li {
+float: left;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+height: 190px;
+}
+.navbar-nav{
+  display: inline-block;
+  position: absolute;
+  margin: 0;
+  padding: 40px 0 0 0;
+}
+.headerLogo{
+  width: 75px;
+  height: 75px;
+  padding: 5px;
+  float: left;
+}
+.teamAndUserName{
+
+}
+.teamChart{
+  display: inline-block;
+  position: relative;
+  // top: -30px;
+  margin: 0 auto;
+width: 100%;
+}
+.headline{
+  font-size: 24;
+  padding-top: 16;
+  margin-bottom: 12;
+  font-weight: 400;
+},
+.slide{
+  padding: 10;
+}
+.chartTabs{
+  background-color: rgb(61, 65, 87) !important;
+}
+.totalScore{
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.totalScoreChart{
+  width: 65%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.totalScore h5{
+  position: relative;
+  top: -5px;
+}
+// .totalScoreValue{
+//   display: inherit !important;
+//   position: relative;
+//     top: -20px;
+// right: -22px;
+//   // left: 50;
+//   // left: 0px;
+// }
+.MuiPaper-root-1{
+  justify-content: left !important;
+  width: 100%;
+}
+.teamChart button{
+  margin: 2px 5px;
+}
+.btnSelect {
+  color: rgb(209, 209, 209);
+  background-color: transparent;
+  border-bottom: 2px solid #C22E72;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 0;
+  margin: 0px;
+}
+.btnDeSelect {
+  color: rgb(209, 209, 209);
+  background-color: transparent;
+  border: none;
+  margin: 0px;
+  padding: 0;
+}
+.btnDeSelect:hover {
+  color: rgb(249, 244, 244);
+}
+.greeting{
+  padding: 20px;
+  margin: 30px 0;
+}
