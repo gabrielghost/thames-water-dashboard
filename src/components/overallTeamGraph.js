@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../actions'
-import { LineChart, Line, XAxis, ReferenceLine } from 'recharts'
+import { LineChart, Line, XAxis, ReferenceLine, Legend } from 'recharts'
 
 class OverallTeamGraph extends Component {
 
@@ -36,6 +36,7 @@ class OverallTeamGraph extends Component {
     margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
     >
       <XAxis dataKey='name' />
+      {/* <Legend /> */}
       <Line type='monotone' dataKey='team' stroke='#C22E72' strokeWidth={3} yAxisId={0} dot={''} />
       <Line type='monotone' dataKey='user' stroke='#586C8D' strokeWidth={3} yAxisId={1} dot={''} />
       <ReferenceLine y={420} label='' stroke='white' strokeDasharray='5 5' />
