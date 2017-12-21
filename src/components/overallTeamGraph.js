@@ -34,12 +34,13 @@ class OverallTeamGraph extends Component {
     height={135}
     data={this.graphData(graphType)}
     margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
+
     >
-      <XAxis dataKey='name' />
+      <XAxis dataKey='name' padding={{right: 5, left: 10}} stroke={'#bfbaba'} />
       {/* <Legend /> */}
-      <Line type='monotone' dataKey='team' stroke='#C22E72' strokeWidth={3} yAxisId={0} dot={''} />
-      <Line type='monotone' dataKey='user' stroke='#586C8D' strokeWidth={3} yAxisId={1} dot={''} />
-      <ReferenceLine y={420} label='' stroke='white' strokeDasharray='5 5' />
+      <Line type='monotone' dataKey='team' stroke='#C22E72' strokeWidth={3} yAxisId={0} dot={null} />
+      <Line type='monotone' dataKey='user' stroke='#586C8D' strokeWidth={3} yAxisId={1} dot={null} />
+      <ReferenceLine y={220} label='' stroke='white' strokeDasharray='5 5' />
     </LineChart>
   )
   }
@@ -50,6 +51,10 @@ class OverallTeamGraph extends Component {
         <button className={this.selected(0)} onClick={this.handleClick.bind(this, 0)}>Week</button>
         <button className={this.selected(1)} onClick={this.handleClick.bind(this, 1)}>Month</button>
         <button className={this.selected(2)} onClick={this.handleClick.bind(this, 2)}>All Time</button>
+        <p className='teamChartTarget'><img src='./assets/images/target.png' />Target</p>
+        <p className='teamChartMe'>● Me</p>
+        <p className='teamChartMyTeam'>● My Team</p>
+
         {this.graphGen(this.props.data.dashReducer.state.mainGraph)}
       </div>
     )

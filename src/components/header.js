@@ -24,6 +24,7 @@ class Header extends Component {
     return (
       <div>
           <nav className='navbar navbar-light'>
+            <div className='header'>
             <ul>
               <img className='headerLogo' src='./assets/images/thames-water-logo.png' alt='Thames Water Logo' />
               <li>
@@ -35,7 +36,7 @@ class Header extends Component {
               <li><OverallTeamGraph /></li>
               <li><TotalScore /></li>
             </ul>
-
+          </div>
           </nav>
       </div>
     )
