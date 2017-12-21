@@ -66,6 +66,70 @@ Either teams or individuals:
 
 #### Step 2
 
-Map all of the above onto a wireframe that corresponds with the reference image
+Map all of the above onto a wireframe that corresponds with the reference image. I'll be using React/Redux as a front end framework - I probably am more experienced with angular but I've been learning react and this is a good chance to put it into practice.
 
-![wireframe]()
+![wireframe](./assets/wireframe.png) 
+
+#### Step 3 - Data
+
+I'll run through the above and generate the dummy data so that I can really understand how the structure is going to work before I dive in.
+
+#### Step 4 - Tooling
+
+Tooling. I'm using a boilerplate for another app I used, which in turn was I think the basis for an online tutorial I took. As a result a couple of the plugins are a little out of date, but will be fine for now. Need to tweak a couple of webpack settings to accomodate sass and images, but not too much trouble - we're up and running!
+
+Tools:
+Webpack
+React
+Redux
+Babel
+Sass
+Lots more beyond
+
+#### Step 4 - Front end libraries
+
+Research front end libraries such as Material UI and Bootstrap for React.
+
+Material UI looks really neat with lots of things that are somewhat similar to the design which seems to be material in influence, if not completely. Bootstrap might be easier as I'm used to working with that a little more.
+
+[Material UI](http://www.material-ui.com/#/)
+
+[Bootstrap](https://react-bootstrap.github.io/)
+
+I'll also need a chart generator. The one over at [Recharts](http://recharts.org/#/en-US) looks reallly nice.
+
+![Recharts](./assets/recharts-example.png)
+
+#### Step 5
+
+Wrestling with  Material UI took up a lot of time today and without much luck. Tried to use the Material UI tabs for the main graph on the header, and the circular progress bar. Neither were very flexible - at times I wanted to force change the colour and it simply wasn't possible. Suppose it's to be expected in a V1.0 Beta but I'd hoped for more. 
+
+I opened up bootstrap to see if there was anything there that might be useful but again found it not so flexible and hard to cusomise.
+
+#### Step 5
+
+Started drafting up the header without any large libraries, using a stand alone npm package for the circular progress and a custom Rechart for the header. Took me a lot longer than I'dve hoped but think it's looking ok. Will save the polish if I have time at the end. I started on the header before everything else so I can understand better my approach with every other tile.
+
+![Header](./assets/header-day1.png)
+
+## Day 2
+
+#### Step 6 - Tile Layout
+
+Now I've taken on the header I'll look into the other components. Not 100% sure the best way of having all of the tiles slotting neatly next to each other, which I think is going to be key for looking on a desktop, but also how that then transfers to a mobile device.
+
+I've dived into the libraries again looking for a neat grid/layout framework/library. Bootstrap might be a good idea but I'm after something lightweight and neat. I'm liking the look of [Elemental](http://elemental-ui.com/grid). It's grid looks neat for all of these bits and bobs which might get quite unweildy.
+
+I'm going to give this a go and will end up trying to recreate the wireframe on the site. Then once I'm happy with the responsiveness etc I'll look to complete the implementation for the individual elements.
+
+After a quick play and the need to update my webpack bundler to do LESS too, which didn't fix straight away. That coupled with some of my styling going funky, I'm looking for something even lighter that only does grid.
+
+Looks like Bootstrap will do exactly what I need after all.
+
+![Wireframes](./assets/css-wireframe-desktop.png)
+
+![Wireframes](./assets/css-wireframe-mobile.png)
+
+#### Step 7 - Circular Icon/Focus Tile
+
+Two exactly the same, and one other that is very similar. Think it would be good to polish them off. Mainly CSS based to get the look and feel the same as the example, no real technical challenges that haven't already been addressed. It's worth designing a generic element for both and then pass arguments/props as needed.

@@ -17,8 +17,16 @@ module.exports = {
       loaders: ['style-loader', 'css-loader', 'sass-loader']
     },
     {
+      test: /\.less$/,
+      loaders: ['style-loader', 'css-loader', 'less-loader']
+    },
+    {
       test: /\.(png|jpg)$/,
       loader: 'url-loader'
+    },
+    {
+      test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+      loader: 'file-loader'
     }
     ],
     resolve: {

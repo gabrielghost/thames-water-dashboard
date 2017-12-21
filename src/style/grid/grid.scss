@@ -1,0 +1,33 @@
+.column{
+  height: 100%;
+  border: 1px solid black;
+  padding: 0px;
+}
+.tile{
+  height: 200px;
+  border: 1px solid black;
+  padding: 0px;
+}
+.newsFeed{
+  height: 600px;
+  border: 1px solid black;
+  padding: 0px;
+}
+.newsFeedTileBody{
+  height: 580px;
+  background-color: rgb(235, 225, 97);
+  width: 100% -10px;
+  padding: 0px;
+  margin: 10px;
+}
+.container{
+  padding: 0px;
+}
+.tileBody{
+  // background-color: rgb(97, 111, 235);
+  height: 180px;
+  width: 100% -10px;
+  padding: 0px;
+  margin: 10px;
+  position: relative;
+}

@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 // @import url(https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css)
 @import './header/main';
-@import './circularProgressbar';
+@import './libraries/circularProgressbar';
+@import './grid/grid';
+@import './tiles/circularTile';
 
 body{
   font-family: 'Roboto';
