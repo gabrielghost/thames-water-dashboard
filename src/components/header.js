@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import * as actions from '../actions'
 import OverallTeamGraph from './overallTeamGraph'
 import TotalScore from './totalScore'
+import { Col } from 'react-bootstrap'
 
 class Header extends Component {
   userName () {
@@ -22,6 +23,7 @@ class Header extends Component {
 
   render () {
     return (
+      
       <div>
           <nav className='navbar navbar-light'>
             <div className='header'>
@@ -50,3 +52,24 @@ function mapStateToProps (state) {
 }
 
 export default connect(mapStateToProps, actions)(Header)
+
+
+{/* <div>
+  <nav className='navbar navbar-light'>
+    <div className='header'>
+      <img className='headerLogo headerComponent' src='./assets/images/thames-water-logo.png' alt='Thames Water Logo' />
+      <Col xs={12} md={3} className='column headerComponent' >
+        <div className='greeting'>
+          <h3>{this.teamName()}</h3>
+          <h5>Welcome back {this.userName()}</h5>
+        </div>
+      </Col>
+      <Col xs={12} md={3} className='column headerComponent' >
+        <OverallTeamGraph />
+      </Col>
+      <Col xs={12} md={3} className='column headerComponent' >
+        <TotalScore />
+      </Col>
+    </div>
+  </nav>
+</div> */}
