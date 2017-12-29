@@ -23,23 +23,29 @@ class Header extends Component {
 
   render () {
     return (
-      
+
       <div>
-          <nav className='navbar navbar-light'>
-            <div className='header'>
+        <nav className='navbar navbar-light'>
+          <div className='header'>
             <ul>
               <img className='headerLogo' src='./assets/images/thames-water-logo.png' alt='Thames Water Logo' />
-              <li>
-                <div className='greeting'>
-                <h3>{this.teamName()}</h3>
-              <h5>Welcome back {this.userName()}</h5>
-            </div>
-            </li>
-              <li><OverallTeamGraph /></li>
-              <li><TotalScore /></li>
+              <Col xs={12} s={6} md={3} className='column headerComponent' >
+                <li>
+                  <div className='greeting'>
+                    <h3>{this.teamName()}</h3>
+                    <h5>Welcome back {this.userName()}</h5>
+                  </div>
+                </li>
+              </Col>
+              <Col xs={12} s={6} md={3} className='column headerComponent' >
+                <li><OverallTeamGraph /></li>
+              </Col>
+              <Col xs={12} s={6} md={3} className='column headerComponent' >
+                <li><TotalScore /></li>
+              </Col>
             </ul>
           </div>
-          </nav>
+        </nav>
       </div>
     )
   }
@@ -56,20 +62,20 @@ export default connect(mapStateToProps, actions)(Header)
 
 {/* <div>
   <nav className='navbar navbar-light'>
-    <div className='header'>
-      <img className='headerLogo headerComponent' src='./assets/images/thames-water-logo.png' alt='Thames Water Logo' />
-      <Col xs={12} md={3} className='column headerComponent' >
-        <div className='greeting'>
-          <h3>{this.teamName()}</h3>
-          <h5>Welcome back {this.userName()}</h5>
-        </div>
-      </Col>
-      <Col xs={12} md={3} className='column headerComponent' >
-        <OverallTeamGraph />
-      </Col>
-      <Col xs={12} md={3} className='column headerComponent' >
-        <TotalScore />
-      </Col>
-    </div>
-  </nav>
+  <div className='header'>
+  <img className='headerLogo headerComponent' src='./assets/images/thames-water-logo.png' alt='Thames Water Logo' />
+  <Col xs={12} md={3} className='column headerComponent' >
+  <div className='greeting'>
+  <h3>{this.teamName()}</h3>
+  <h5>Welcome back {this.userName()}</h5>
+</div>
+</Col>
+<Col xs={12} md={3} className='column headerComponent' >
+<OverallTeamGraph />
+</Col>
+<Col xs={12} md={3} className='column headerComponent' >
+<TotalScore />
+</Col>
+</div>
+</nav>
 </div> */}

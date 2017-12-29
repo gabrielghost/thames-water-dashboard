@@ -17,7 +17,6 @@ class Dashboard extends Component {
 
   render () {
     const db = this.props.data.dashReducer
-    console.log(db)
     return (
       <div>
         <Header />
@@ -31,8 +30,8 @@ class Dashboard extends Component {
             <CircleTile props={db.myScores.customerSatisfaction} tileTitle={'Customer Satisfaction'} mainScore={db.myScores.customerSatisfaction.today} />
             <CircleTile props={db.myScores.bonusPoints} tileTitle={'Bonus Points'} />
             <GraphTile props={db.myScores.dataQuality} tileTitle={'Data Quality'} />
-            <CircleTile props={db.myScores.accuracy} tileTitle={'Accuracy'}/>
-            <WideBoyTile props={db.myScores.locations} />
+            <CircleTile props={db.myScores.accuracy} tileTitle={'Accuracy'} />
+            <WideBoyTile props={db.myScores.wideBoyTile} />
           </Col>
           <Col xs={12} md={3} className='column' >
             <NewsFeed props={db.newsFeed} />

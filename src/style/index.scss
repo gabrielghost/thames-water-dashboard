@@ -4,8 +4,13 @@
 @import './libraries/circularProgressbar';
 @import './grid/grid';
 @import './tiles/circularTile';
+@import './tiles/wideBoyTile';
 
 body{
   font-family: 'Roboto';
   color: rgb(209, 209, 209);
 }
+// .default{
+//   padding: 0;
+//   margin: 0;
+// }

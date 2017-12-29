@@ -30,11 +30,12 @@ export const dashReducer = {
       thisWeek: 4,
       history: [ 6, 5, 7, 3, 4, 5, 6, 4, 7, 8, 4, 2 ]
     },
-    locations: {
-      pumpStationConf: 3824,
-      siteVisits: 2156,
-      confirmedThisWeek: 14,
-      history: [13, 16, 18, 17, 25]
+    wideBoyTile: {
+      title: 'Locations',
+      circle1: { title: 'SITES CONFIRMED AS PUMPING STATION', value: 3824 },
+      circle2: { title: 'SITES VISITED AND AUDITED', value: 2156 },
+      circle3: { title: 'CONFIRMED THIS WEEK', value: 14 },
+      circle4: { title: 'CONFIRMED THIS MONTH', history: [13, 16, 18, 17, 25] }
     }
   },
   myTeamScores: {
