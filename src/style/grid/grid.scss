@@ -3,17 +3,13 @@
   // border: 1px solid black;
   padding: 0px;
 }
-.tile{
-  height: 200px;
-  border: 1px solid black;
-  padding: 0px;
-}
-.newsFeed{
+
+.longTile{
   height: 600px;
   border: 1px solid black;
   padding: 0px;
 }
-.newsFeedTileBody{
+.longTileBody{
   height: 580px;
   background-color: rgb(235, 225, 97);
   width: 100% -10px;
@@ -23,11 +19,37 @@
 .container{
   padding: 0px;
 }
+.tile{
+  height: 200px;
+  border: 1px solid black;
+  padding: 0px;
+}
 .tileBody{
-  // background-color: rgb(97, 111, 235);
   height: 180px;
   width: 100% -10px;
   padding: 0px;
   margin: 10px;
   position: relative;
+}
+.stretchTile{
+  height: 200px;
+  border: 1px solid black;
+  padding: 0px;
+  overflow: hidden;
+}
+@media (max-width:526px){
+  .stretchTile{
+    height: 400px !important;
+  }
+  .wideBoyTile ul {
+    width: 100% !important;
+  }
+}
+@media (max-width:1199px) and (min-width:991px){
+  .wideBoyTile ul li {
+      width: 110px !important;
+  }
+  .wideBoyTile ul{
+    margin: 0px 6px !important;
+  }
 }

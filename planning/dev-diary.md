@@ -150,9 +150,15 @@ Getting back to the process after Christmas - did a few tweaks here and there ov
 
 I'm going to jump back into this wide tile that I was fiddling with over christmas - it's height doesn't change, which needs to - though only the white space below. The image/title div should stay the same to retain the current aesthetic. The circle's titles also need to be grouped with the circles. There also seems to be a padding/margin issue when fitting in with the rest of the grid. Once these CSS tweaks are addressed will set up the props so that the component can be dynamically populated with data - will decide at the time as to whether the titles for the circles will also be able to be dynamically changed.
 
-![Progress Update Day 3](./assets/wideBoy-tile-progress.png)
+![WideBoy progress update](./assets/wideBoy-tile-progress.png)
 
 See here the progress made. Props now dynamically render the data points, including tile title and data titles. Also added function which places commas with the big numbers. Tempted to make that a site-wide amendment but it will do for now.
 
 Finding it tricky to get the div to stay in the center with all circles evenly spaced from each other. 
+
+After some fixing, got it together:
+
+![Responsivity progress update](./assets/wideboy-tile-responsivity-progress-1.png)
+
+![Responsivity progress update](./assets/wideboy-tile-responsivity-progress-2.png)
 

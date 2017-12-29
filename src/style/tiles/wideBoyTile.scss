@@ -1,16 +1,17 @@
 .wideBoyTile ul li {
   float: left;
   padding: 0px;
-  margin: 0px 5px;
+  margin: 0px 3px;
   height: 100%;
-    display: table-cell;
+    // display: table-cell;
+    width: 125px;
 }
 .wideBoyTile ul {
   // float: left;
   padding: 0px;
   margin: 0 auto;
   height: 100%;
-  display: table;
+  width: 524px;
 }
 .wideCircleWrap{
   height: 180px;
