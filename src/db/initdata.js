@@ -237,14 +237,17 @@ export const dashReducer = {
     data: [
       {
         type: 'overtaken',
+        icon: './assets/images/overtaken-icon.png',
         arg1: 'Northern Ninjas'
       },
       {
         type: 'achievement',
+        icon: './assets/images/achievement-icon.png',
         arg1: `We've reached our highest quality score in a month`
       },
       {
         type: 'errors',
+        icon: './assets/images/errors-icon.png',
         arg1: 10,
         arg2: 'week'
       }
@@ -304,21 +307,21 @@ export const dashReducer = {
     title: 'Badges',
     data: [
       {
-        icon: 'iconURLhere',
+        icon: './assets/images/audited-badge.png',
         type: 'sitesAudit',
         goal: 'Audit 300 sites',
         current: 200,
         target: 300
       },
       {
-        icon: 'iconURLhere',
+        icon: './assets/images/accuracy-badge.png',
         type: 'accuracy',
         goal: '95% accuracy for 3 months',
-        current: 200,
+        current: 250,
         target: 300
       },
       {
-        icon: 'iconURLhere',
+        icon: './assets/images/leaderboard-badge.png',
         type: 'topLeaderboard',
         goal: 'Reach the top of the leaderboard',
         current: 5,

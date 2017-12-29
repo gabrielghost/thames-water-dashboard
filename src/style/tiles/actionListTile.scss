@@ -1,7 +1,18 @@
 .titleBar{
   width: 100%;
   height: 55px;
-  background-color: blue;
+
+}
+.titleBar p{
+  font-size: 15px;
+    padding: 10px;
+    margin: 0;
+}
+.Notifications{
+    background: linear-gradient(to right, #1B3782, #1E2869);
+}
+.Badges{
+    background: linear-gradient(to right, #0F5291, #1B67AE);
 }
 .bodyBar{
   width: 100%;
@@ -11,8 +22,8 @@
 .bodyBar ul li{
   width: 100%;
   height: 45px;
-  border: 1px solid black;
-  background-color: red;
+  // border: 1px solid black;
+  background-color: white;
 }
 .bodyBar ul{
 list-style: none;

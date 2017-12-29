@@ -2,23 +2,63 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: grey;
+  background-color: none;
   margin: 6px 10px;
   display: inline-block;
-
+  position: relative;
+  top: 0px;
+}
+.actionIcon img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 0px;
 }
 .action{
   height: 100%;
-  position: absolute;
+  position: relative;
 }
 
 .actionBody{
   display: inline-block;
-  padding: 10px;
-  width: 180px;
-  height: 45px;
+  // padding: 10px;
+  width: 200px;
+  height: 50px;
   position: relative;
-  bottom: 16px;
+  top: 0px;
   margin: 0;
   font-size: 12px;
+}
+.actionBody p {
+position: relative;
+// top: 5px;
+    margin: 0 auto;
+    float: left;
+}
+.progressbar-container{
+  border-radius: 5px;
+  background-color: #E3E3E3;
+  width: 100%;
+  height: 7px;
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  left: 0px;
+}
+.progressbar-progress{
+  border-radius: 5px;
+  height: 7px !important;
+  // background-color: #E3E3E3;
+  // width: 80%;
+  // display: inline-block;
+  // position: relative;
+  // top: -30px;
+  // left: 30px;
+}
+.percentComplete{
+  float: right;
+  font-size: 10px;
+  color: #D8759C;
 }

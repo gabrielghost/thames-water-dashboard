@@ -180,3 +180,6 @@ Going to start by blocking out the basic CSS, and then look to separating off in
 
 ![Notifications and Badges](./assets/action-feed-tiles.png)
 
+Probably time for a quick update as I come out of the wormhole. Positioning is a bit skee-wiff but got the components rendering from the data as they should.
+
+![Notifications and Badges Update](./assets/action-feed-tiles-update-1.png)
