@@ -232,91 +232,100 @@ export const dashReducer = {
       {name: 'Sun', team: 460, user: 160, amt: 1}
     ]
   },
-  notifications: [
-    {
-      type: 'overtaken',
-      arg1: 'Northern Ninjas'
-    },
-    {
-      type: 'achievement',
-      arg2: `We've reached our highest quality score in a month`
-    },
-    {
-      type: 'Errors',
-      arg1: 10,
-      arg2: 'week'
-    }
-  ],
-  newsFeed: [
-    {
-      type: 'action',
-      name: 'Praful Yadev',
-      description: 'Completed a site visit',
-      points: 25,
-      badge: 'most improved'
-    },
-    {
-      type: 'team achievement',
-      name: 'Team Northern Ninjas',
-      description: 'Earned a perfect Customer Satisfaction score of',
-      score: 5
-    },
-    {
-      type: 'action',
-      name: 'Chris Barter',
-      description: 'Completed a site visit',
-      points: 30,
-      badge: 'best this month'
-    },
-    {
-      type: 'video',
-      name: 'Chris Barter',
-      title: 'Unblocking a flygt pump',
-      url: ''
-    },
-    {
-      type: 'badge',
-      name: 'Jordan Howard',
-      badgeType: 'Helpful Notes',
-      number: 15
-    },
-    {
-      type: 'action',
-      name: 'Praful Yadev',
-      description: 'Completed a site visit',
-      points: 25,
-      badge: 'most improved'
-    },
-    {
-      type: 'team achievement',
-      name: 'Team Northern Ninjas',
-      description: 'Earned a perfect Customer Satisfaction score of',
-      score: 5
-    }
-  ],
-  badges: [
-    {
-      icon: 'iconURLhere',
-      name: 'Sites audit',
-      goal: 'Audit 300 sites',
-      current: 200,
-      target: 300
-    },
-    {
-      icon: 'iconURLhere',
-      name: 'Accuracy',
-      goal: '95% accuracy for 3 months',
-      current: 200,
-      target: 300
-    },
-    {
-      icon: 'iconURLhere',
-      name: 'Top of Leaderboard',
-      goal: 'Reach the top of the leaderboard',
-      current: 5,
-      target: 1
-    }
-  ],
+  notifications: {
+    title: 'Notifications',
+    data: [
+      {
+        type: 'overtaken',
+        arg1: 'Northern Ninjas'
+      },
+      {
+        type: 'achievement',
+        arg1: `We've reached our highest quality score in a month`
+      },
+      {
+        type: 'errors',
+        arg1: 10,
+        arg2: 'week'
+      }
+    ]
+  },
+  newsFeed: {
+    title: 'News Feed',
+    data: [
+      {
+        type: 'action',
+        name: 'Praful Yadev',
+        description: 'Completed a site visit',
+        points: 25,
+        badge: 'most improved'
+      },
+      {
+        type: 'team achievement',
+        name: 'Team Northern Ninjas',
+        description: 'Earned a perfect Customer Satisfaction score of',
+        score: 5
+      },
+      {
+        type: 'action',
+        name: 'Chris Barter',
+        description: 'Completed a site visit',
+        points: 30,
+        badge: 'best this month'
+      },
+      {
+        type: 'video',
+        name: 'Chris Barter',
+        title: 'Unblocking a flygt pump',
+        url: ''
+      },
+      {
+        type: 'badge',
+        name: 'Jordan Howard',
+        badgeType: 'Helpful Notes',
+        number: 15
+      },
+      {
+        type: 'action',
+        name: 'Praful Yadev',
+        description: 'Completed a site visit',
+        points: 25,
+        badge: 'most improved'
+      },
+      {
+        type: 'team achievement',
+        name: 'Team Northern Ninjas',
+        description: 'Earned a perfect Customer Satisfaction score of',
+        score: 5
+      }
+    ]
+  },
+  badges: {
+    title: 'Badges',
+    data: [
+      {
+        icon: 'iconURLhere',
+        type: 'sitesAudit',
+        goal: 'Audit 300 sites',
+        current: 200,
+        target: 300
+      },
+      {
+        icon: 'iconURLhere',
+        type: 'accuracy',
+        goal: '95% accuracy for 3 months',
+        current: 200,
+        target: 300
+      },
+      {
+        icon: 'iconURLhere',
+        type: 'topLeaderboard',
+        goal: 'Reach the top of the leaderboard',
+        current: 5,
+        target: 1
+      }
+    ]
+  },
   teamScores: [
     {
       teamName: 'Western Wolves',

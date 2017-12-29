@@ -175,3 +175,8 @@ The styling will be dynamically processed for the elements accordingly.
 Poof! There we are - and just a touch of styling on top to see how far off it all is.
 
 #### Step 10 Notifications and Badges
+
+Going to start by blocking out the basic CSS, and then look to separating off into components if that becomes relevant.
+
+![Notifications and Badges](./assets/action-feed-tiles.png)
+

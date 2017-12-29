@@ -1,0 +1,24 @@
+.actionIcon{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: grey;
+  margin: 6px 10px;
+  display: inline-block;
+
+}
+.action{
+  height: 100%;
+  position: absolute;
+}
+
+.actionBody{
+  display: inline-block;
+  padding: 10px;
+  width: 180px;
+  height: 45px;
+  position: relative;
+  bottom: 16px;
+  margin: 0;
+  font-size: 12px;
+}

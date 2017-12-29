@@ -5,8 +5,10 @@
 @import './grid/grid';
 @import './tiles/circularTile';
 @import './tiles/wideBoyTile';
+@import './tiles/actionListTile';
 @import './microComponents/percentage';
 @import './microComponents/indicator';
+@import './microComponents/action';
 
 @media (max-width:526px){
   .stretchTile{
