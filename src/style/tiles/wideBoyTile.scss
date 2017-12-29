@@ -24,7 +24,7 @@
 .wideCircleWrapChildren{
   width: 100%;
   height: 100%;
-  margin: 35px 0 0 0;
+  margin: 60px 0 0 0;
   padding: 0;
   display: block;
   position: relative;
@@ -34,8 +34,8 @@
   background-color: rgb(0, 100, 143);
   border-radius: 50%;
   border: solid 3px white;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   position: relative;
   margin: 0 auto;
   display: block;
@@ -64,19 +64,20 @@
 .imageWideBoy{
   background-color: rgb(158, 127, 81);
   width: 100%;
-  height: 50%;
+  height: 60%;
   position: relative;
   bottom: 0;
   margin: 0;
 }
-.imageWideBoy h5{
+.imageWideBoy p{
   margin: 0;
-    padding: 3px;;
+  padding: 3px;
+  font-size: 15px;
 }
 .wideCircle h3{
   text-align: center;
   position: relative;
-  top: 12px;
+  top: 9px;
 }
 .infoWideBoy{
   width: 125px;
@@ -85,6 +86,7 @@
   top: 0px;
   margin: 0 auto;
   padding: 0;
+    font-size: 12px;
 }
 // .infoWideBoy li{
 //   float: left;

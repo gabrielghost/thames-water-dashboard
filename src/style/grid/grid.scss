@@ -37,19 +37,3 @@
   padding: 0px;
   overflow: hidden;
 }
-@media (max-width:526px){
-  .stretchTile{
-    height: 400px !important;
-  }
-  .wideBoyTile ul {
-    width: 100% !important;
-  }
-}
-@media (max-width:1199px) and (min-width:991px){
-  .wideBoyTile ul li {
-      width: 110px !important;
-  }
-  .wideBoyTile ul{
-    margin: 0px 6px !important;
-  }
-}

@@ -34,8 +34,8 @@ export const dashReducer = {
       title: 'Locations',
       circle1: { title: 'SITES CONFIRMED AS PUMPING STATION', value: 3824 },
       circle2: { title: 'SITES VISITED AND AUDITED', value: 2156 },
-      circle3: { title: 'CONFIRMED THIS WEEK', value: 14 },
-      circle4: { title: 'CONFIRMED THIS MONTH', history: [13, 16, 18, 17, 25] }
+      circle3: { title: 'CONFIRMED THIS WEEK', history: [13, 16, 18, 17, 25] },
+      circle4: { title: 'CONFIRMED THIS MONTH', history: [13, 16, 18, 17, 25, 13, 16, 18, 17, 25, 13, 16, 18, 17, 25, 13, 16, 18, 17, 25] }
     }
   },
   myTeamScores: {
