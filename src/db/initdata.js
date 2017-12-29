@@ -9,28 +9,31 @@ export const dashReducer = {
       history: [ {1: 373}, {2: 50}, {3: 40}, {4: 93}, {5: 400}, {6: 405}, {7: 460}, {8: 466}, {9: 467} ]
     },
     customerSatisfaction: {
+      title: 'Customer Satisfaction',
       today: 4.6,
       target: 4.5,
-      history: [ 4.0, 3.4, 3.8, 3.9, 4.0 ]
+      history: [ 4.0, 3.4, 3.8, 3.9, 4.0, 4.0, 3.4, 3.8, 3.9, 4.0, 4.0, 3.4, 3.8, 3.9, 4.0, 4.0, 3.4, 3.8, 3.9, 4.0 ]
     },
     dataQuality: {
+      title: 'Data Quality',
       today: 73,
       target: {
         base: 83,
         dailyIncrease: 2
       },
-      history: [ 67, 57, 43, 37, 32, 36, 37, 40, 49, 56, 63, 74 ]
+      history: [ 67, 57, 43, 37, 32, 36, 37, 38, 43, 45, 59, 54, 64, 67, 68, 69, 70, 70, 70, 70, 71, 75, 80, 90, 30, 45, 67, 54, 64, 65, 68, 73 ]
     },
     bonusPoints: {
+      title: 'Bonus Points',
       today: 14,
       target: 20,
-      history: [ 12, 12, 12, 12, 14, 14, 14, 14, 14, 15, 15, 15 ]
+      history: [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 23, 34, 26, 21, 19, 18, 15, 14, 12, 16, 17, 17, 15, 13, 12, 12, 13, 14, 16, 19, 20, 21, 22, 23, 34, 9 ]
     },
     accuracy: {
-      thisWeek: 4,
-      history: [ 6, 5, 7, 3, 4, 5, 6, 4, 7, 8, 4, 2 ]
+      title: 'Accuracy',
+      history: [ 6, 5, 7, 3, 4, 5, 6, 4, 7, 8, 4, 2, 6, 5, 7, 3, 4, 5, 6, 4, 7, 8, 4, 2, 6, 5, 7, 3, 4, 5, 6, 4, 7, 8, 4, 2, 6, 5, 7, 3, 4, 5, 6, 4, 7, 8, 4, 2, 6, 5, 7, 3, 4, 5, 6, 4, 7, 8, 4, 2 ]
     },
-    wideBoyTile: {
+    locations: {
       title: 'Locations',
       circle1: { title: 'SITES CONFIRMED AS PUMPING STATION', value: 3824 },
       circle2: { title: 'SITES VISITED AND AUDITED', value: 2156 },

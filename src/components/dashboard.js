@@ -27,11 +27,11 @@ class Dashboard extends Component {
             <LeaderBoard />
           </Col>
           <Col xs={12} md={6} className='column' >
-            <CircleTile props={db.myScores.customerSatisfaction} tileTitle={'Customer Satisfaction'} mainScore={db.myScores.customerSatisfaction.today} />
-            <CircleTile props={db.myScores.bonusPoints} tileTitle={'Bonus Points'} />
-            <GraphTile props={db.myScores.dataQuality} tileTitle={'Data Quality'} />
-            <CircleTile props={db.myScores.accuracy} tileTitle={'Accuracy'} />
-            <WideBoyTile props={db.myScores.wideBoyTile} />
+            <CircleTile data={db.myScores.customerSatisfaction} />
+            <CircleTile data={db.myScores.bonusPoints} />
+            <GraphTile data={db.myScores.dataQuality} />
+            <CircleTile data={db.myScores.accuracy} />
+            <WideBoyTile data={db.myScores.locations} />
           </Col>
           <Col xs={12} md={3} className='column' >
             <NewsFeed props={db.newsFeed} />

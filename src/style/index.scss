@@ -5,6 +5,8 @@
 @import './grid/grid';
 @import './tiles/circularTile';
 @import './tiles/wideBoyTile';
+@import './microComponents/percentage';
+@import './microComponents/indicator';
 
 @media (max-width:526px){
   .stretchTile{
@@ -27,6 +29,7 @@
 body{
   font-family: 'Roboto';
   color: rgb(209, 209, 209);
+  background-color: #EEEEEE;
 }
 // .default{
 //   padding: 0;

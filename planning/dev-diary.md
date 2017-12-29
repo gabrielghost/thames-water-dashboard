@@ -162,3 +162,16 @@ After some fixing, got it together:
 
 ![Responsivity progress update](./assets/wideboy-tile-responsivity-progress-2.png)
 
+#### Step 9 - Indicators
+
+Need to put the upticks, downticks and neutral characters for all of the points. Not entirely sure of the best way to do this - do I create a component that does it for everything? I think probably.
+
+Will create both a percentage component, and an indicator component that I can use. The percentage component will accept arguments of timeframe - week or month, and then the array that needs to be processed. The indicator will simply return a positive arrow if the input is positive, and a negative one if the opposite. In event of a zero or other critter it'll respond with a flat line. 
+
+The styling will be dynamically processed for the elements accordingly.
+
+![Indicators](./assets/indicators.png)
+
+Poof! There we are - and just a touch of styling on top to see how far off it all is.
+
+#### Step 10 Notifications and Badges

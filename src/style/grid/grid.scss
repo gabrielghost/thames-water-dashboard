@@ -6,34 +6,37 @@
 
 .longTile{
   height: 600px;
-  border: 1px solid black;
+  // border: 1px solid black;
   padding: 0px;
 }
 .longTileBody{
-  height: 580px;
+  height: 590px;
   background-color: rgb(235, 225, 97);
   width: 100% -10px;
   padding: 0px;
-  margin: 10px;
+  margin: 2.5px;
+  box-shadow:         0px 2px 6px 0px rgba(50, 50, 50, 0.3);
 }
 .container{
   padding: 0px;
 }
 .tile{
   height: 200px;
-  border: 1px solid black;
+  // border: 1px solid black;
   padding: 0px;
 }
 .tileBody{
-  height: 180px;
+  height: 190px;
   width: 100% -10px;
   padding: 0px;
-  margin: 10px;
+  margin: 2.5px;
   position: relative;
+  box-shadow:         0px 2px 6px 0px rgba(50, 50, 50, 0.3);
 }
 .stretchTile{
   height: 200px;
-  border: 1px solid black;
+  // border: 1px solid black;
   padding: 0px;
   overflow: hidden;
+  box-shadow:         0px 2px 6px 0px rgba(50, 50, 50, 0.3);
 }
