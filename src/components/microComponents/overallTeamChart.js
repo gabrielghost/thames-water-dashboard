@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import * as actions from '../actions'
+import * as actions from '../../actions'
 import { LineChart, Line, XAxis, ReferenceLine, Legend } from 'recharts'
 
-class OverallTeamGraph extends Component {
+class OverallTeamChart extends Component {
 
   handleClick (value, event) {
-    this.props.graphType(value)
+    this.props.chartType(value)
   }
 
-  graphData (type) {
+  chartData (type) {
     if (type === 0) {
       return this.props.data.dashReducer.myTeamScores.history
     } else if (type === 1) {
@@ -20,19 +20,19 @@ class OverallTeamGraph extends Component {
   }
 
   selected (type) {
-    if (type === this.props.data.dashReducer.state.mainGraph) {
+    if (type === this.props.data.dashReducer.state.mainChart) {
       return 'btnSelect'
     } else {
       return 'btnDeSelect'
     }
   }
 
-  graphGen (graphType) {
+  chartGen (chartType) {
     return (
   <LineChart
     width={325}
     height={135}
-    data={this.graphData(graphType)}
+    data={this.chartData(chartType)}
     margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
 
     >
@@ -55,7 +55,7 @@ class OverallTeamGraph extends Component {
         <p className='teamChartMe'>● Me</p>
         <p className='teamChartMyTeam'>● My Team</p>
 
-        {this.graphGen(this.props.data.dashReducer.state.mainGraph)}
+        {this.chartGen(this.props.data.dashReducer.state.mainChart)}
       </div>
     )
   }
@@ -67,4 +67,4 @@ function mapStateToProps (state) {
   }
 }
 
-export default connect(mapStateToProps, actions)(OverallTeamGraph)
+export default connect(mapStateToProps, actions)(OverallTeamChart)

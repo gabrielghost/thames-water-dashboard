@@ -180,6 +180,12 @@ Going to start by blocking out the basic CSS, and then look to separating off in
 
 ![Notifications and Badges](./assets/action-feed-tiles.png)
 
-Probably time for a quick update as I come out of the wormhole. Positioning is a bit skee-wiff but got the components rendering from the data as they should.
+Probably time for a quick update as I come out of the wormhole. Positioning is a bit skee-wiff but got the components rendering from the data as they should. There is an action component which takes several different arguments, rendering the appropriate layout as seen below (excusing the current positioning issues).
 
 ![Notifications and Badges Update](./assets/action-feed-tiles-update-1.png)
+
+## Day 4
+
+Not perfect, but bit better now. Good enough to move on and come back at the end. Will need to add new notifications icon, and the option to 'view all'. This alongside making I'm not quite sure how I' 
+
+![Notifications and Badges Update 2](./assets/action-feed-tiles-update-2.png)

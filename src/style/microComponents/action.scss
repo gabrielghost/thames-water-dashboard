@@ -1,13 +1,20 @@
-.actionIcon{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: none;
-  margin: 6px 10px;
-  display: inline-block;
-  position: relative;
-  top: 0px;
+// .actionIcon{
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
+//   background-color: none;
+//   margin: 6px 10px;
+//   display: inline-block;
+//   position: relative;
+//   top: 0px;
+// }
+.percentComplete{
+  float: right !important;
+  font-size: 9px !important;
+  color: #D8759C;
 }
+
+
 .actionIcon img{
   width: 30px;
   height: 30px;
@@ -15,6 +22,8 @@
   display: inline-block;
   position: relative;
   top: 0px;
+  margin: 5px;
+  float: left;
 }
 .action{
   height: 100%;
@@ -23,19 +32,29 @@
 
 .actionBody{
   display: inline-block;
-  // padding: 10px;
-  width: 200px;
-  height: 50px;
+  width: 170px;
+  height: 45px;
   position: relative;
   top: 0px;
-  margin: 0;
-  font-size: 12px;
+  margin: 0 0 0 20px;
+  font-size: 10px;
+}
+.actionBody{
+  display: inline-block;
+  width: 170px;
+  height: 45px;
+  position: relative;
+  top: 0px;
+  margin: 0 0 0 20px;
+  font-size: 10px;
 }
 .actionBody p {
 position: relative;
-// top: 5px;
-    margin: 0 auto;
-    float: left;
+float: left;
+display: flex;
+align-items: center;
+margin-top: 6px;
+font-size: 9px;
 }
 .progressbar-container{
   border-radius: 5px;
@@ -50,15 +69,19 @@ position: relative;
 .progressbar-progress{
   border-radius: 5px;
   height: 7px !important;
-  // background-color: #E3E3E3;
-  // width: 80%;
-  // display: inline-block;
-  // position: relative;
-  // top: -30px;
-  // left: 30px;
+
 }
-.percentComplete{
-  float: right;
+.Accuracy .progressbar-progress{
+  background: linear-gradient( to right, red, orange, yellow, green);
+  background-size: 210px;
+}
+.Accuracy .progressbar-container{
+    width: 100%;
+}
+.Accuracy .info {
   font-size: 10px;
-  color: #D8759C;
+  padding: 40px 10px 10px 10px;
+}
+.Accuracy .circle {
+  margin-top: 20px !important;
 }

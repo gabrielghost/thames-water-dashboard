@@ -1,10 +1,6 @@
-
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-// import { Link, withRouter } from 'react-router-dom'
-import * as actions from '../actions'
-import { withStyles } from 'material-ui/styles'
-import { CircularProgress } from 'material-ui/Progress'
+import * as actions from '../../actions'
 import CircularProgressbar from 'react-circular-progressbar'
 
 class TotalScore extends Component {

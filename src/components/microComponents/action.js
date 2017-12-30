@@ -18,7 +18,7 @@ let progressValue = function (current, target){
   if (props.obj.type === 'overtaken') {
     return (<div className={'action'}>
       <div className={'actionIcon'}><img src={props.obj.icon} /></div>
-      <div className={'actionBody'}><p>Your team has overtaken {props.obj.arg1}</p></div>
+      <div className={'actionBody'}><p>Your team has overtaken <span style={{fontWeight: 'bold', margin: '0 1px'}}>{props.obj.arg1}</span></p></div>
     </div>)
   }
 
@@ -32,7 +32,7 @@ let progressValue = function (current, target){
   if (props.obj.type === 'errors') {
     return (<div className={'action'}>
       <div className={'actionIcon'}><img src={props.obj.icon} /></div>
-      <div className={'actionBody'}><p>Errors are {indicatorText(props.obj.arg1)} {props.obj.arg1}% this {props.obj.arg2}!</p></div>
+      <div className={'actionBody'}><p>Errors are <span style={{fontWeight: 'bold', margin: '0 3px'}}>{indicatorText(props.obj.arg1)}</span><span style={{fontWeight: 'bold', margin: '0 3px'}}>{props.obj.arg1}%</span>  this <span style={{fontWeight: 'bold', margin: '0 3px'}}> {props.obj.arg2} </span>!</p></div>
     </div>)
   }
 
@@ -44,7 +44,6 @@ let progressValue = function (current, target){
   }
 
   if (props.obj.type === 'accuracy') {
-    console.log(props.obj.icon)
     return (<div className={'action'}>
       <div className={'actionIcon'}><img src={props.obj.icon} /></div>
       <div className={'actionBody'}>

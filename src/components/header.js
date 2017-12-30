@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../actions'
-import OverallTeamGraph from './overallTeamGraph'
-import TotalScore from './totalScore'
+import OverallTeamChart from './microComponents/overallTeamChart'
+import TotalScore from './microComponents/totalScore'
 import { Col } from 'react-bootstrap'
 
 class Header extends Component {
@@ -38,7 +38,7 @@ class Header extends Component {
                 </li>
               </Col>
               <Col xs={12} s={6} md={3} className='column headerComponent' >
-                <li><OverallTeamGraph /></li>
+                <li><OverallTeamChart /></li>
               </Col>
               <Col xs={12} s={6} md={3} className='column headerComponent' >
                 <li><TotalScore /></li>
@@ -71,7 +71,7 @@ export default connect(mapStateToProps, actions)(Header)
 </div>
 </Col>
 <Col xs={12} md={3} className='column headerComponent' >
-<OverallTeamGraph />
+<OverallTeamChart />
 </Col>
 <Col xs={12} md={3} className='column headerComponent' >
 <TotalScore />

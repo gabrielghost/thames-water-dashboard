@@ -4,7 +4,6 @@ import Action from '../microComponents/action'
 
 export default (props) => {
   let notifArray = props.data.data
-  console.log(props)
   return (<Col xs={12} md={12} className='tile'>
     <div className='tileBody'>
       <div className={`titleBar ${props.data.title}`}><p>{props.data.title}</p></div>

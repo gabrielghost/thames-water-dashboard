@@ -1,0 +1,35 @@
+.chartOverlayText{
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  z-index: 11;
+  padding: 10px;
+
+}
+
+.chartInfo{
+  background-color: white;
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+.chart{
+  background-image: radial-gradient(center bottom, ellipse cover, #1669AD, #1D4793);
+  background-image: -o-radial-gradient(center bottom, ellipse cover, #1669AD, #1D4793);
+  background-image: -ms-radial-gradient(center bottom, ellipse cover, #1669AD, #1D4793);
+  background-image: -moz-radial-gradient(center bottom, ellipse cover, #1669AD, #1D4793);
+  background-image: -webkit-radial-gradient(center bottom, ellipse cover, #1669AD, #1D4793);
+  background-size: 100%;
+  background-position: center;
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  top: 0;
+  margin: 0;
+    display: inline;
+}
