@@ -2,6 +2,7 @@
 // @import url(https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css)
 @import './header/main';
 @import './libraries/circularProgressbar';
+@import './libraries/bootstrap';
 @import './grid/grid';
 @import './tiles/circularTile';
 @import './tiles/wideBoyTile';
@@ -10,6 +11,7 @@
 @import './microComponents/percentage';
 @import './microComponents/indicator';
 @import './microComponents/action';
+
 
 @media (max-width:526px){
   .stretchTile{

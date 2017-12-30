@@ -1,7 +1,5 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import * as actions from '../../actions'
-import { LineChart, Line, XAxis, ReferenceLine, Legend } from 'recharts'
+import React from 'react'
+import { LineChart, Line, XAxis, YAxis, ReferenceLine } from 'recharts'
 
 export default (props) => {
 
@@ -33,11 +31,11 @@ export default (props) => {
         margin={{ top: 10, right: 2, left: 20, bottom: 2 }}
 
         >
+
           <XAxis dataKey='name' padding={{right: 5, left: 10}} stroke={'#bfbaba'} />
-          {/* <Legend /> */}
           <Line type='monotone' dataKey='team' stroke='#C22E72' strokeWidth={3} yAxisId={0} dot={null} />
           <Line type='monotone' dataKey='user' stroke='#C22E72' strokeWidth={3} yAxisId={1} dot={null} />
-          <ReferenceLine y={220} label='' stroke='white' strokeDasharray='5 5' />
+          <ReferenceLine y={70} label='' stroke='white' strokeDasharray='5 5' />
         </LineChart>
       )
     }

@@ -22,11 +22,32 @@ export const dashReducer = {
         dailyIncrease: 2
       },
       history: [
-        {name: '10th', user: 323, amt: 1},
-        {name: '11th', user: 30, amt: 1},
-        {name: '12th', user: 60, amt: 1},
-        {name: '13th', user: 130, amt: 1},
-        {name: '14th', user: 230, amt: 1}
+        {name: '10th', user: 20},
+        {user: 30},
+        {user: 40},
+        {user: 35},
+        {user: 37},
+        {user: 38, amt: 1},
+        {user: 32, amt: 1},
+        {user: 30, amt: 1},
+        {user: 29, amt: 1},
+        {user: 4, amt: 1},
+        {name: '20th', user: 17, amt: 1},
+        {user: 23, amt: 1},
+        {user: 25, amt: 1},
+        {user: 30, amt: 1},
+        {user: 34, amt: 1},
+        {user: 40, amt: 1},
+        {user: 44, amt: 1},
+        {user: 48, amt: 1},
+        {user: 49, amt: 1},
+        {user: 50, amt: 1},
+        {name: '30th', user: 45, amt: 1},
+        {user: 30, amt: 1},
+        {user: 60, amt: 1},
+        {user: 63, amt: 1},
+        {user: 67, amt: 1},
+        {user: 73, amt: 1}
        ]
     },
     bonusPoints: {
