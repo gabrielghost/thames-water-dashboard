@@ -186,6 +186,31 @@ Probably time for a quick update as I come out of the wormhole. Positioning is a
 
 ## Day 4
 
-Not perfect, but bit better now. Good enough to move on and come back at the end. Will need to add new notifications icon, and the option to 'view all'. This alongside making I'm not quite sure how I' 
+Not perfect, but bit better now. Good enough to move on and come back at the end. Will need to add new notifications icon, and the option to 'view all'. 
 
 ![Notifications and Badges Update 2](./assets/action-feed-tiles-update-2.png)
+
+#### Step 12 Accuracy
+
+Accuracy tile is laid out differently to the other 'circle' tiles. I either make a separate component for it, or keep the current 'circle' component, but have it change if Accuracy prop is given. I'll go for the latter now, but might need to be changed in future.
+
+![Accuracy update](./assets/accuracy-update.png)
+
+Happy with this for now but two big flaws:
+
+- Gradients loop when tile is expanded
+- No progress markers on the bar charts
+
+I probably need to build my own component here - I've lifted these progress bar components from NPM. Can come back to these if have time at the end.
+
+#### Step 13 Images
+
+Want to see how far off the styling is by adding images and gradients where relevant. Added a transparent div over the images to mimic that faded effect.
+
+![Images update](./assets/images-update.png)
+
+#### Step 14 Graph Tile
+
+This brings together a lot of elements that have been used in the header, so should be pretty straightforward. The rising trend line might be the only issue. Here goes...
+
+

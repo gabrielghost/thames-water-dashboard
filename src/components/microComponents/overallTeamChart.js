@@ -55,7 +55,7 @@ class OverallTeamChart extends Component {
         <p className='teamChartMe'>● Me</p>
         <p className='teamChartMyTeam'>● My Team</p>
 
-        {this.chartGen(this.props.data.dashReducer.state.mainChart)}
+        {this.chartGen(this.props.data.dashReducer.state.mainGraph)}
       </div>
     )
   }

@@ -33,3 +33,30 @@
   margin: 0;
     display: inline;
 }
+.qualityChart{
+height: 100%;
+}
+
+.qualityChartTarget{
+  color: white;
+  display: inline-block;
+  float: right;
+    font-size: 8px;
+}
+.qualityChartActual{
+  color: #A63785;
+  display: inline-block;
+  float: right;
+    font-size: 8px;
+    margin-right: 10px;
+}
+.qualityChartWrap{
+  margin: 0 auto;
+  display: block;
+  width: 230px;
+}
+.qualityKey{
+  top: 10px;
+  right: 20px;
+  position: relative;
+}

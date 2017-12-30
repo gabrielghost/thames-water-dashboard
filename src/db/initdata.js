@@ -21,7 +21,13 @@ export const dashReducer = {
         base: 83,
         dailyIncrease: 2
       },
-      history: [ 67, 57, 43, 37, 32, 36, 37, 38, 43, 45, 59, 54, 64, 67, 68, 69, 70, 70, 70, 70, 71, 75, 80, 90, 30, 45, 67, 54, 64, 65, 68, 73 ]
+      history: [
+        {name: '10th', user: 323, amt: 1},
+        {name: '11th', user: 30, amt: 1},
+        {name: '12th', user: 60, amt: 1},
+        {name: '13th', user: 130, amt: 1},
+        {name: '14th', user: 230, amt: 1}
+       ]
     },
     bonusPoints: {
       title: 'Bonus Points',

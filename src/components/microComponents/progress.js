@@ -2,7 +2,6 @@ import React from 'react'
 import Progressbar from 'react-progressbar'
 
 export default (props) => {
-  console.log(props.timeframe)
   let arr = props.data
   const arrSum = function (arr) {
     return arr.reduce((a, b) => a + b, 0)
@@ -29,6 +28,5 @@ export default (props) => {
   let progressValue = function (current, target) {
     return Math.round((current / target) * 100)
   }
-console.log(current, duration)
   return (<Progressbar color={'#1E1E69'} completed={progressValue(current, max)} />)
 }

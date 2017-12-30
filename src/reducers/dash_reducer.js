@@ -1,4 +1,4 @@
-import { FETCH_DATA, INITIALIZE, GRAPH_WEEK, GRAPH_MONTH, GRAPH_ALL_TIME} from '../actions/types'
+import { FETCH_DATA, INITIALIZE, CHART_WEEK, CHART_MONTH, CHART_ALL_TIME} from '../actions/types'
 
 export default function (state = {}, action) {
   switch (action.type) {
@@ -6,12 +6,12 @@ export default function (state = {}, action) {
       return { ...state, data: action.payload }
     case INITIALIZE:
       return { ...state, data: action.payload }
-    case GRAPH_WEEK:
-      return { ...state, state: { mainGraph: action.payload } }
-    case GRAPH_MONTH:
-      return { ...state, state: { mainGraph: action.payload } }
-    case GRAPH_ALL_TIME:
-      return { ...state, state: { mainGraph: action.payload } }
+    case CHART_WEEK:
+      return { ...state, state: { mainChart: action.payload } }
+    case CHART_MONTH:
+      return { ...state, state: { mainChart: action.payload } }
+    case CHART_ALL_TIME:
+      return { ...state, state: { mainChart: action.payload } }
   }
 
   return state

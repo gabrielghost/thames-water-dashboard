@@ -3,13 +3,10 @@ import { connect } from 'react-redux'
 import * as actions from '../../actions'
 import { LineChart, Line, XAxis, ReferenceLine, Legend } from 'recharts'
 
-class OverallTeamGraph extends Component {
+export default (props) => {
 
-  handleClick (value, event) {
-    this.props.graphType(value)
-  }
 
-  graphData (type) {
+  const graphData = function (type) {
     if (type === 0) {
       return this.props.data.dashReducer.myTeamScores.history
     } else if (type === 1) {
@@ -19,7 +16,7 @@ class OverallTeamGraph extends Component {
     }
   }
 
-  selected (type) {
+  const selected = function (type) {
     if (type === this.props.data.dashReducer.state.mainGraph) {
       return 'btnSelect'
     } else {
@@ -27,44 +24,33 @@ class OverallTeamGraph extends Component {
     }
   }
 
-  graphGen (graphType) {
+  const graphGen = function (data) {
     return (
-  <LineChart
-    width={325}
-    height={135}
-    data={this.graphData(graphType)}
-    margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
+      <LineChart
+        width={220}
+        height={100}
+        data={data}
+        margin={{ top: 10, right: 2, left: 20, bottom: 2 }}
 
-    >
-      <XAxis dataKey='name' padding={{right: 5, left: 10}} stroke={'#bfbaba'} />
-      {/* <Legend /> */}
-      <Line type='monotone' dataKey='team' stroke='#C22E72' strokeWidth={3} yAxisId={0} dot={null} />
-      <Line type='monotone' dataKey='user' stroke='#586C8D' strokeWidth={3} yAxisId={1} dot={null} />
-      <ReferenceLine y={220} label='' stroke='white' strokeDasharray='5 5' />
-    </LineChart>
-  )
-  }
-
-  render () {
+        >
+          <XAxis dataKey='name' padding={{right: 5, left: 10}} stroke={'#bfbaba'} />
+          {/* <Legend /> */}
+          <Line type='monotone' dataKey='team' stroke='#C22E72' strokeWidth={3} yAxisId={0} dot={null} />
+          <Line type='monotone' dataKey='user' stroke='#C22E72' strokeWidth={3} yAxisId={1} dot={null} />
+          <ReferenceLine y={220} label='' stroke='white' strokeDasharray='5 5' />
+        </LineChart>
+      )
+    }
     return (
-      <div className='teamChart'>
-        <button className={this.selected(0)} onClick={this.handleClick.bind(this, 0)}>Week</button>
-        <button className={this.selected(1)} onClick={this.handleClick.bind(this, 1)}>Month</button>
-        <button className={this.selected(2)} onClick={this.handleClick.bind(this, 2)}>All Time</button>
-        <p className='teamChartTarget'><img src='./assets/images/target.png' />Target</p>
-        <p className='teamChartMe'>● Me</p>
-        <p className='teamChartMyTeam'>● My Team</p>
-
-        {this.graphGen(this.props.data.dashReducer.state.mainGraph)}
+      <div className='qualityChart'>
+        <div className='qualityKey'>
+          <p className='qualityChartTarget'>● Target</p>
+          <p className='qualityChartActual'>● Actual</p>
+        </div>
+        <div className='qualityChartWrap'>
+          {graphGen(props.data)}
+        </div>
       </div>
     )
-  }
-}
 
-function mapStateToProps (state) {
-  return {
-    data: state
   }
-}
-
-export default connect(mapStateToProps, actions)(OverallTeamGraph)

@@ -3,9 +3,9 @@ import { initData } from '../db/initdata'
 import {
   FETCH_DATA,
   INITIALIZE,
-  GRAPH_WEEK,
-  GRAPH_MONTH,
-  GRAPH_ALL_TIME
+  CHART_WEEK,
+  CHART_MONTH,
+  CHART_ALL_TIME
 } from './types'
 
 export function fetchData () {
@@ -16,10 +16,10 @@ export function fetchData () {
     })
   }
 }
-export function graphType (type) {
+export function chartType (type) {
   return function (dispatch) {
     dispatch({
-      type: GRAPH_WEEK,
+      type: CHART_WEEK,
       payload: type
     })
   }
