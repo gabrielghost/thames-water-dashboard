@@ -21,19 +21,20 @@
   top: 0;
 }
 .Bonus .circle{
-    background-color: #0C6583;
+  background-color: #0C6583;
 }
 .Customer .circle{
-    background-color: #0C6A50;
+  background-color: #0C6A50;
 }
 .Accuracy .circle{
-    background-image: url("../../assets/images/accuracy-icon.png");
-    background-size: 100%;
+  background-image: url("../../assets/images/accuracy-icon.png");
+  background-size: 100%;
 }
 .circle h3{
   text-align: center;
   position: relative;
-  top: 9px;
+  top: 25px;
+  font-size: 20px;
 }
 
 .info{
@@ -74,32 +75,32 @@
   display: inline;
 }
 .Bonus .image{
-    background-image: url("../../assets/images/bonus.jpg");
-    background-size: 50%;
+  background-image: url("../../assets/images/bonus.jpg");
+  background-size: 50%;
 }
 .Bonus .imageOverlay{
-      background-color: rgba(12, 101, 131, 0.54);
+  background-color: rgba(12, 101, 131, 0.54);
 }
 .Customer .image{
-    background-image: url("../../assets/images/smileys.jpg");
+  background-image: url("../../assets/images/smileys.jpg");
 }
 .Customer .imageOverlay{
-      background-color: rgba(12, 106, 80, 0.54);
+  background-color: rgba(12, 106, 80, 0.54);
 }
 .Accuracy .image{
-    background-image: url("../../assets/images/accuracy-image.jpg");
-    background-size: 170%;
-        height: 40%;
+  background-image: url("../../assets/images/accuracy-image.jpg");
+  background-size: 170%;
+  height: 40%;
 }
 .Accuracy .imageOverlay{
-    background-color: rgba(84, 84, 84, 0.54);
-    height: 40%;
+  background-color: rgba(84, 84, 84, 0.54);
+  height: 40%;
 }
 .Accuracy .imageOverlayText{
-    height: 40%;
+  height: 40%;
 }
 .Accuracy .info{
-    height: 60% !important;
+  height: 60% !important;
 }
 
 .imageOverlay{
@@ -116,8 +117,9 @@
   position: relative;
   top: 0;
   margin: 0;
-    z-index: 11;
-    padding: 10px;
+  z-index: 11;
+  padding: 10px;
+    font-size: 15px;
 }
 
 .image h5{

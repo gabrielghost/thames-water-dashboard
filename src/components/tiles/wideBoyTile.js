@@ -15,7 +15,7 @@ export default (props) => {
 
   return (
     <Col xs={12} md={12} className='stretchTile'>
-      <div className='tileBody wideBoyTile'>
+      <div className='wideBoyTile'>
         <div className='wideCircleWrap'>
           <ul>
             <li><Col xs={3} s={3} md={3} className='wideCircleWrapChildren'><div className='wideCircle'><h3>{addCommas(data.circle1.value)}</h3></div><div className='infoWideBoy'><p>{data.circle1.title}</p></div></Col></li>
