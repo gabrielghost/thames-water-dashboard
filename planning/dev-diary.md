@@ -218,3 +218,23 @@ This brings together a lot of elements that have been used in the header, so sho
 ## Day 5
 
 Need to complete the graph tile, the news feed and the leaderboard. Main thing is to also make the header responsive as the UL's don't respond when the dimension changes. Think this would be the best place to start, this way can be sure that all elements are responsive moving forward and can address unexpected issues when they arise. Next step after that is to finish up the graph tile. 
+
+#### Step 15 Responsiveness(/ivity?)
+
+So working through the various cases. I'm not quite happy with how the header is different width to the 3 columns when the 2nd colum halfs it's width but it will do for now as I can't think of a better solution yet.
+
+#### Nexus 4
+
+Notice here that the background resizes when the screen is smaller so it doesn't end up repeating itself.
+
+![Responsiveness Nexus 4](./assets/responsiveness-nexus-4.png)
+
+#### Laptop
+![Responsiveness Laptop](./assets/responsiveness-laptop.png)
+
+#### Galaxy S5
+![Responsiveness Galaxy S5](./assets/responsiveness-s5.png)
+
+#### Argh!
+![Responsiveness Unhappy with this](./assets/responsiveness-argh.png)
+

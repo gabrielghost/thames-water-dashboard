@@ -26,7 +26,7 @@ class Header extends Component {
 
       <div>
         <nav className='navbar navbar-light'>
-          <Col xs={12} s={6} md={1} className='headerComponent' >
+          <Col xs={12} s={6} md={1} className='headerComponent headerLogo' >
             <img className='headerLogo' src='./assets/images/thames-water-logo.png' alt='Thames Water Logo' />
           </Col>
                 <Col xs={12} s={6} md={3} className='headerComponent' >

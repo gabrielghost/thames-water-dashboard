@@ -38,11 +38,7 @@
     width: 100% !important;
   }
 }
-// @media (max-width:466px){
-// nav:after{
-//   background-size: 600%;
-// }
-// }
+
 @media (max-width:524px){
 nav:after{
   background-size: 600%;
@@ -53,7 +49,12 @@ nav:after{
   background-size: 300%;
 }
 }
-
+@media (min-width:766px){
+  .headerLogo{
+    display: relative;
+    top: -37px;
+  }
+}
 @media (max-width:1199px) and (min-width:991px){
   .wideBoyTile ul li {
       width: 110px !important;
