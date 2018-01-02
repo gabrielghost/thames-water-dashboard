@@ -1,6 +1,7 @@
-import { FETCH_DATA, INITIALIZE, CHART_WEEK, CHART_MONTH, CHART_ALL_TIME} from '../actions/types'
+import { FETCH_DATA, INITIALIZE, CHART_WEEK, CHART_MONTH, CHART_ALL_TIME, LEADERBOARD } from '../actions/types'
 
 export default function (state = {}, action) {
+  console.log(action)
   switch (action.type) {
     case FETCH_DATA:
       return { ...state, data: action.payload }
@@ -12,6 +13,8 @@ export default function (state = {}, action) {
       return { ...state, state: { mainChart: action.payload } }
     case CHART_ALL_TIME:
       return { ...state, state: { mainChart: action.payload } }
+    case LEADERBOARD:
+      return { ...state, state: { leaderBoard: action.payload } }
   }
 
   return state

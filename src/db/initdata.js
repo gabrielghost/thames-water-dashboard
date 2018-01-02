@@ -314,21 +314,25 @@ export const dashReducer = {
   },
   teamScores: {
     title: 'Leaderboard',
+    view: 0,
     data: [
       {
         teamName: 'Western Wolves',
+        logo: './assets/images/western-wolves-logo.png',
         thisWeek: 3,
         lastWeek: 2,
         history: [340, 340, 320, 310, 360, 480, 490, 500]
       },
       {
         teamName: 'Southern Sharks',
+        logo: './assets/images/southern-sharks-logo.png',
         thisWeek: 1,
         lastWeek: 1,
         history: [379, 270, 320, 310, 360, 480, 490, 500]
       },
       {
         teamName: 'Northern Ninjas',
+        logo: './assets/images/northern-ninjas-logo.png',
         thisWeek: 2,
         lastWeek: 3,
         history: [370, 333, 320, 310, 360, 480, 490, 500]

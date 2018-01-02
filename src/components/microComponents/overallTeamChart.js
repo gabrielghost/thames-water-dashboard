@@ -4,11 +4,6 @@ import * as actions from '../../actions'
 import { LineChart, Line, XAxis, ReferenceLine, Legend } from 'recharts'
 
 class OverallTeamChart extends Component {
-
-  // componentWillMount () {
-  //   this.props.chartType(0)
-  // }
-
   handleClick (value, event) {
     this.props.chartType(value)
   }
