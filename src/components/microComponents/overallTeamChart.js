@@ -32,7 +32,6 @@ class OverallTeamChart extends Component {
   }
 
   chartGen (chartType) {
-    console.log(this.chartData(chartType))
     return (
   <LineChart
     width={280}

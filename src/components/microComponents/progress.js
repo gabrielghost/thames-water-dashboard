@@ -1,5 +1,5 @@
 import React from 'react'
-import Progressbar from 'react-progressbar'
+import Progressbar from './progressbar'
 
 export default (props) => {
   let arr = props.data
@@ -28,5 +28,8 @@ export default (props) => {
   let progressValue = function (current, target) {
     return Math.round((current / target) * 100)
   }
-  return (<Progressbar color={'#1E1E69'} completed={progressValue(current, max)} />)
+
+  let cent = progressValue(current, max)
+
+  return (<Progressbar color={'linear-gradient( to right, red, orange, yellow, green)'} backgroundSize={`${100 + (100 - cent)}%`} completed={cent} />)
 }

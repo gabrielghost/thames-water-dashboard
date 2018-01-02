@@ -312,21 +312,27 @@ export const dashReducer = {
       }
     ]
   },
-  teamScores: [
-    {
-      teamName: 'Western Wolves',
-      currentScore: 378,
-      history: [340, 333, 320, 310, 360, 480, 490, 500]
-    },
-    {
-      teamName: 'Southern Sharks',
-      currentScore: 374,
-      history: [379, 333, 320, 310, 360, 480, 490, 500]
-    },
-    {
-      teamName: 'Northern Ninjas',
-      currentScore: 372,
-      history: [370, 333, 320, 310, 360, 480, 490, 500]
-    }
-  ]
+  teamScores: {
+    title: 'Leaderboard',
+    data: [
+      {
+        teamName: 'Western Wolves',
+        thisWeek: 3,
+        lastWeek: 2,
+        history: [340, 340, 320, 310, 360, 480, 490, 500]
+      },
+      {
+        teamName: 'Southern Sharks',
+        thisWeek: 1,
+        lastWeek: 1,
+        history: [379, 270, 320, 310, 360, 480, 490, 500]
+      },
+      {
+        teamName: 'Northern Ninjas',
+        thisWeek: 2,
+        lastWeek: 3,
+        history: [370, 333, 320, 310, 360, 480, 490, 500]
+      }
+    ]
+  }
 }

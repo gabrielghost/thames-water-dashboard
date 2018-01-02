@@ -24,7 +24,7 @@ class Dashboard extends Component {
           <Col xs={12} s={12} md={3} className='column' >
             <ActionListTile data={db.notifications} />
             <ActionListTile data={db.badges} />
-            <LeaderBoard />
+            <LeaderBoard data={db.teamScores} />
           </Col>
           <Col xs={12} s={12} md={3} lg={6} className='column' >
             <CircleTile data={db.myScores.customerSatisfaction} />

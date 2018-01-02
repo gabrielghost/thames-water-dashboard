@@ -8,9 +8,11 @@
 @import './tiles/wideBoyTile';
 @import './tiles/actionListTile';
 @import './tiles/chartTile';
+@import './tiles/leaderboardTile';
 @import './microComponents/percentage';
 @import './microComponents/indicator';
 @import './microComponents/action';
+@import './microComponents/progress';
 
 
 @media (max-width:462px) and (min-width:260px){
