@@ -13,13 +13,45 @@
 @import './microComponents/action';
 
 
-@media (max-width:526px){
+@media (max-width:462px) and (min-width:260px){
   .stretchTile{
     height: 400px !important;
   }
   .wideBoyTile ul {
     width: 100% !important;
   }
+}
+@media (max-width:990px) and (min-width:766px){
+  .stretchTile{
+    height: 380px !important;
+    margin-bottom: 20px;
+  }
+  .wideBoyTile ul {
+    width: 100% !important;
+  }
+}
+@media (max-width:939px) and (min-width:766px){
+  .stretchTile{
+    width: 235px !important;
+  }
+  .wideBoyTile ul {
+    width: 100% !important;
+  }
+}
+// @media (max-width:466px){
+// nav:after{
+//   background-size: 600%;
+// }
+// }
+@media (max-width:524px){
+nav:after{
+  background-size: 600%;
+}
+}
+@media (max-width:766px) and (min-width:525px){
+nav:after{
+  background-size: 300%;
+}
 }
 
 @media (max-width:1199px) and (min-width:991px){
@@ -30,6 +62,21 @@
     margin: 0px 6px !important;
   }
 }
+@media (max-width:1000px) and (min-width:300px){
+  .container {
+      min-width: 100% !important;
+  }
+}
+@media (max-width:300px){
+  .container {
+      min-width: 300px !important;
+  }
+}
+// @media (max-width:940px){
+//   .stretchTile {
+//       max-width: 235px !important;
+//   }
+// }
 
 body{
   font-family: 'Roboto';

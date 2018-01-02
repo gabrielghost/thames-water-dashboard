@@ -3,8 +3,7 @@ import { LineChart, Line, XAxis, YAxis, ReferenceLine } from 'recharts'
 
 export default (props) => {
 
-
-  const graphData = function (type) {
+  const chartData = function (type) {
     if (type === 0) {
       return this.props.data.dashReducer.myTeamScores.history
     } else if (type === 1) {
@@ -22,7 +21,7 @@ export default (props) => {
     }
   }
 
-  const graphGen = function (data) {
+  const chartGen = function (data) {
     return (
       <LineChart
         width={220}
@@ -46,9 +45,8 @@ export default (props) => {
           <p className='qualityChartActual'>● Actual</p>
         </div>
         <div className='qualityChartWrap'>
-          {graphGen(props.data)}
+          {chartGen(props.data)}
         </div>
       </div>
     )
-
   }

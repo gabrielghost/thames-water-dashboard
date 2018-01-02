@@ -213,4 +213,8 @@ Want to see how far off the styling is by adding images and gradients where rele
 
 This brings together a lot of elements that have been used in the header, so should be pretty straightforward. The rising trend line might be the only issue. Here goes...
 
+![Graph tile update](./assets/graph-tile-update-1.png)
 
+## Day 5
+
+Need to complete the graph tile, the news feed and the leaderboard. Main thing is to also make the header responsive as the UL's don't respond when the dimension changes. Think this would be the best place to start, this way can be sure that all elements are responsive moving forward and can address unexpected issues when they arise. Next step after that is to finish up the graph tile. 

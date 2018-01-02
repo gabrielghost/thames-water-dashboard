@@ -26,52 +26,48 @@ class Header extends Component {
 
       <div>
         <nav className='navbar navbar-light'>
-          <div className='header'>
-            <ul>
-              <img className='headerLogo' src='./assets/images/thames-water-logo.png' alt='Thames Water Logo' />
-              <Col xs={12} s={6} md={3} className='column headerComponent' >
-                <li>
+          <Col xs={12} s={6} md={1} className='headerComponent' >
+            <img className='headerLogo' src='./assets/images/thames-water-logo.png' alt='Thames Water Logo' />
+          </Col>
+                <Col xs={12} s={6} md={3} className='headerComponent' >
                   <div className='greeting'>
                     <h3>{this.teamName()}</h3>
                     <h5>Welcome back {this.userName()}</h5>
                   </div>
-                </li>
-              </Col>
-              <Col xs={12} s={6} md={3} className='column headerComponent' >
-                <li><OverallTeamChart /></li>
-              </Col>
-              <Col xs={12} s={6} md={3} className='column headerComponent' >
-                <li><TotalScore /></li>
-              </Col>
-            </ul>
+                </Col>
+                <Col xs={12} s={6} md={5} className='headerComponent' >
+                  <OverallTeamChart />
+                </Col>
+                <Col xs={12} s={6} md={3} className='headerComponent' >
+                  <TotalScore />
+                </Col>
+            </nav>
           </div>
-        </nav>
-      </div>
-    )
-  }
-}
+        )
+      }
+    }
 
-function mapStateToProps (state) {
-  return {
-    data: state
-  }
-}
+    function mapStateToProps (state) {
+      return {
+        data: state
+      }
+    }
 
-export default connect(mapStateToProps, actions)(Header)
+    export default connect(mapStateToProps, actions)(Header)
 
 
-{/* <div>
-  <nav className='navbar navbar-light'>
-  <div className='header'>
-  <img className='headerLogo headerComponent' src='./assets/images/thames-water-logo.png' alt='Thames Water Logo' />
+    {/* <div>
+      <nav className='navbar navbar-light'>
+      <div className='header'>
+      <img className='headerLogo headerComponent' src='./assets/images/thames-water-logo.png' alt='Thames Water Logo' />
+      <Col xs={12} md={3} className='column headerComponent' >
+      <div className='greeting'>
+      <h3>{this.teamName()}</h3>
+      <h5>Welcome back {this.userName()}</h5>
+    </div>
+  </Col>
   <Col xs={12} md={3} className='column headerComponent' >
-  <div className='greeting'>
-  <h3>{this.teamName()}</h3>
-  <h5>Welcome back {this.userName()}</h5>
-</div>
-</Col>
-<Col xs={12} md={3} className='column headerComponent' >
-<OverallTeamChart />
+  <OverallTeamChart />
 </Col>
 <Col xs={12} md={3} className='column headerComponent' >
 <TotalScore />

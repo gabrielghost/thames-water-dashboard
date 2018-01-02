@@ -5,6 +5,10 @@ import { LineChart, Line, XAxis, ReferenceLine, Legend } from 'recharts'
 
 class OverallTeamChart extends Component {
 
+  // componentWillMount () {
+  //   this.props.chartType(0)
+  // }
+
   handleClick (value, event) {
     this.props.chartType(value)
   }
@@ -28,9 +32,10 @@ class OverallTeamChart extends Component {
   }
 
   chartGen (chartType) {
+    console.log(this.chartData(chartType))
     return (
   <LineChart
-    width={325}
+    width={280}
     height={135}
     data={this.chartData(chartType)}
     margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
@@ -55,7 +60,7 @@ class OverallTeamChart extends Component {
         <p className='teamChartMe'>● Me</p>
         <p className='teamChartMyTeam'>● My Team</p>
 
-        {this.chartGen(this.props.data.dashReducer.state.mainGraph)}
+        {this.chartGen(this.props.data.dashReducer.state.mainChart)}
       </div>
     )
   }
