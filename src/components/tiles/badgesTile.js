@@ -7,29 +7,39 @@ import Unread from '../microComponents/unread'
 
 class BadgesTile extends Component {
   handleClick (value) {
-    this.props.leaderboardTimeScale(value)
+    this.props.toggleBadges()
   }
 
   render () {
-    console.log(this.props)
     let notifArray = this.props.data.dashReducer.badges.data
     let unreadCount = 0
+    let displayArray
+    let expanded
+    let buttonText
+    if (this.props.data.dashReducer.viewAllBadges === false) {
+      displayArray = notifArray.slice(0, 3)
+      expanded = ''
+      buttonText = 'VIEW ALL'
+    } else if (this.props.data.dashReducer.viewAllBadges === true) {
+      displayArray = notifArray
+      expanded = 'expanded'
+      buttonText = '✖'
+    }
     notifArray.map(function (object, i) {
       if (object.unread === true) {
         unreadCount++
       }
     })
-    let displayArray = notifArray.slice(0, 3)
     return (<Col xs={12} md={12} className='tile'>
       <div className='tileBody'>
         <div className={`titleBar ${this.props.data.dashReducer.badges.title}`}>
           <div className={`title`}>
             <h3>{this.props.data.dashReducer.badges.title}</h3>
             <Unread number={unreadCount} />
-            <button>VIEW ALL</button>
+            <button onClick={this.handleClick.bind(this)}>{buttonText}</button>
           </div>
         </div>
-        <div className='bodyBar'>
+        <div className={`bodyBar ${expanded}`}>
           <ul>
             {displayArray.map(function (object, i) {
               return (<li><Action obj={object} key={i} /></li>)

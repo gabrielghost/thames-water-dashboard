@@ -1,6 +1,8 @@
 export const dashReducer = {
   mainChart: 0,
   leaderBoard: 'week',
+  viewAllBadges: false,
+  viewAllNotifications: false,
   userName: 'Praful Yadev',
   teamName: 'Southern Sharks',
   myScores: {
@@ -321,6 +323,27 @@ export const dashReducer = {
   badges: {
     title: 'Badges',
     data: [
+      {
+        icon: './assets/images/audited-badge.png',
+        type: 'sitesAudit',
+        goal: 'Audit 300 sites',
+        current: 200,
+        target: 300
+      },
+      {
+        icon: './assets/images/accuracy-badge.png',
+        type: 'accuracy',
+        goal: '95% accuracy for 3 months',
+        current: 250,
+        target: 300
+      },
+      {
+        icon: './assets/images/leaderboard-badge.png',
+        type: 'topLeaderboard',
+        goal: 'Reach the top of the leaderboard',
+        current: 5,
+        target: 1
+      },
       {
         icon: './assets/images/audited-badge.png',
         type: 'sitesAudit',

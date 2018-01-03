@@ -292,3 +292,15 @@ Going back to the badges and notifications tiles, need ot add an unread badge an
 
 It's hard to know how 'unread' shoud be defined in this context - the items aren't like emails or texts where you open them to see the full details, so I suppose without more information I'll simply make it look correct for now, and have the ability to view all of the actions in the database. If an idea hits me later of how to best process the actions, then I might give it a go.
 
+Ok so functionally we're there - no real major challenges - had to refactor a bit of code for this though - will need to go back and tidy everything up. Not convinced we need separate Notifications and Badges classes - they are almost identical. 
+
+Will work on the CSS transitions for the 'view all' functionality, refactor where possible and tidy everything up, inside and out.
+
+![View All Update](./assets/view-all-update-1.png)
+
+![View All Update](./assets/view-all-update-2.png)
+
+#### Step 19 Tidy things up, inside and out.
+
+The CSS could be tweaked here and there, and the code could definitely do with some streamlining.
+

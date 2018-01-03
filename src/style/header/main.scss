@@ -69,12 +69,13 @@ width: 100%;
   // top: -30px;
   margin: 0 auto;
 width: 100%;
-max-width: 250px;
+max-width: 260px;
 }
+
 .teamChart p{
   float: right;
-  font-size: 12px;
-  padding: 3px;
+  font-size: 11px;
+  padding: 2px;
 }
 .teamChartMyTeam{
   color: #C22E72;
@@ -108,7 +109,6 @@ max-width: 250px;
   padding: 10px;
 }
 .totalScoreChart{
-  // width: 65%;
   max-width: 110px;
   margin: 0 auto;
   padding: 10px;
@@ -124,8 +124,8 @@ max-width: 250px;
   width: 100%;
 }
 .teamChart button{
-  margin: 2px 5px;
-  font-size: 14px;
+  margin: 2px 3px;
+  font-size: 12px;
 }
 .btnSelect {
   color: rgb(209, 209, 209);

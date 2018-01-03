@@ -7,7 +7,9 @@ import {
   CHART_MONTH,
   CHART_ALL_TIME,
   LEADERBOARD_WEEK,
-  LEADERBOARD_MONTH
+  LEADERBOARD_MONTH,
+  TOGGLE_NOTIFICATIONS,
+  TOGGLE_BADGES
 } from './types'
 
 export function fetchData () {
@@ -23,6 +25,20 @@ export function chartType (type) {
     dispatch({
       type: CHART_WEEK,
       payload: type
+    })
+  }
+}
+export function toggleNotifications () {
+  return function (dispatch) {
+    dispatch({
+      type: TOGGLE_NOTIFICATIONS
+    })
+  }
+}
+export function toggleBadges () {
+  return function (dispatch) {
+    dispatch({
+      type: TOGGLE_BADGES
     })
   }
 }

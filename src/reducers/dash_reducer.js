@@ -1,4 +1,4 @@
-import { FETCH_DATA, INITIALIZE, CHART_WEEK, CHART_MONTH, CHART_ALL_TIME, LEADERBOARD_WEEK, LEADERBOARD_MONTH } from '../actions/types'
+import { FETCH_DATA, INITIALIZE, CHART_WEEK, CHART_MONTH, CHART_ALL_TIME, LEADERBOARD_WEEK, LEADERBOARD_MONTH, TOGGLE_NOTIFICATIONS, TOGGLE_BADGES } from '../actions/types'
 
 export default function (state = {}, action) {
   switch (action.type) {
@@ -16,6 +16,10 @@ export default function (state = {}, action) {
       return { ...state, leaderBoard: action.payload }
     case LEADERBOARD_MONTH:
       return { ...state, leaderBoard: action.payload }
+    case TOGGLE_NOTIFICATIONS:
+      return { ...state, viewAllNotifications: !state.viewAllNotifications }
+    case TOGGLE_BADGES:
+      return { ...state, viewAllBadges: !state.viewAllBadges }
   }
 
   return state
