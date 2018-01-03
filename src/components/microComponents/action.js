@@ -64,4 +64,34 @@ let progressValue = function (current, target){
       </div>
     </div>)
   }
+  if (props.obj.type === 'siteVisit') {
+    return (<div className={'action'}>
+      <div className={'actionIcon'}><img src={props.obj.icon} /></div>
+      <div className={'actionBody'}>
+        <p>{props.obj.goal}</p>
+        <p className={'percentComplete'}>{progressValue(props.obj.current, props.obj.target)}% complete</p>
+        <Progressbar color={'#1E1E69'} completed={progressValue(props.obj.current, props.obj.target)} />
+      </div>
+    </div>)
+  }
+  if (props.obj.type === 'customerSatisfaction') {
+    return (<div className={'action'}>
+      <div className={'actionIcon'}><img src={props.obj.icon} /></div>
+      <div className={'actionBody'}>
+        <p>{props.obj.goal}</p>
+        <p className={'percentComplete'}>{progressValue(props.obj.current, props.obj.target)}% complete</p>
+        <Progressbar color={'#1E1E69'} completed={progressValue(props.obj.current, props.obj.target)} />
+      </div>
+    </div>)
+  }
+  if (props.obj.type === 'video') {
+    return (<div className={'action'}>
+      <div className={'actionIcon'}><img src={props.obj.icon} /></div>
+      <div className={'actionBody'}>
+        <p>{props.obj.goal}</p>
+        <p className={'percentComplete'}>{progressValue(props.obj.current, props.obj.target)}% complete</p>
+        <Progressbar color={'#1E1E69'} completed={progressValue(props.obj.current, props.obj.target)} />
+      </div>
+    </div>)
+  }
 }

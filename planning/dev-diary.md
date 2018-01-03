@@ -267,3 +267,16 @@ Main challenge with this tile is the different sizes that each action is, and th
 ![Newsfeed wireframe after](./assets/newsfeed-wireframe-after.png)
 
 Notice here that the other elements have been squashed to make way for the jumbo element - this way we can include specially sized elements, with the default ones making way.
+
+
+Ok, so functionally we're there - now just to prettify.
+
+![Newsfeed functionality update](./assets/newsfeed-update-1.png)
+
+There is a little element which might be useful to make into a component - it's the points badge:
+
+![Newsfeed functionality update](./assets/points-badge-example.png)
+
+Here we are - not perfect but will do for now, now just to finish some of the more subtle CSS formatting.
+
+![Newsfeed badge update](./assets/newsfeed-badge-update.png)

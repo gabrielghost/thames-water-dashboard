@@ -241,49 +241,58 @@ export const dashReducer = {
     title: 'News Feed',
     data: [
       {
+        img: './assets/images/praful-yadev-profile.png',
         type: 'action',
         name: 'Praful Yadev',
         description: 'Completed a site visit',
         points: 25,
-        badge: 'most improved'
+        badge: 'Most Improved'
       },
       {
+        img: './assets/images/northern-ninjas-logo.png',
         type: 'team achievement',
         name: 'Team Northern Ninjas',
         description: 'Earned a perfect Customer Satisfaction score of',
-        score: 5
+        score: '5/5'
       },
       {
+        img: './assets/images/chris-barter-profile.png',
         type: 'action',
         name: 'Chris Barter',
         description: 'Completed a site visit',
         points: 30,
-        badge: 'best this month'
+        badge: 'Best this month'
       },
       {
+        img: './assets/images/gary-walters-profile.png',
         type: 'video',
-        name: 'Chris Barter',
+        name: 'Gary Walters',
         title: 'Unblocking a flygt pump',
-        url: ''
+        url: './assets/images/video-image.jpg'
       },
       {
+        img: './assets/images/jordan-howard-profile.png',
         type: 'badge',
         name: 'Jordan Howard',
         badgeType: 'Helpful Notes',
+        description: 'For writing 15 useful notes!',
+        img2: './assets/images/helpful-notes-badge.png',
         number: 15
       },
       {
+        img: './assets/images/praful-yadev-profile.png',
         type: 'action',
         name: 'Praful Yadev',
         description: 'Completed a site visit',
         points: 25,
-        badge: 'most improved'
+        badge: 'Most Improved'
       },
       {
+        img: './assets/images/northern-ninjas-logo.png',
         type: 'team achievement',
         name: 'Team Northern Ninjas',
         description: 'Earned a perfect Customer Satisfaction score of',
-        score: 5
+        score: '5/5'
       }
     ]
   },

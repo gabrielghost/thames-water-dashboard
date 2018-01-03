@@ -1,0 +1,60 @@
+.newsFeedActionIcon img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  margin: 5px 5px 5px 5px;
+  float: left;
+}
+.newsFeedActionIcon{
+  height: 100%;
+  display: inline-block;
+}
+.newsFeedAction{
+  height: 100%;
+  position: relative;
+}
+.newsFeedActionBody{
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  margin: 0 0 0 10px;
+  font-size: 10px;
+}
+// .newsFeedBadge .newsFeedActionBody{
+//   display: inline-block;
+//   position: relative;
+//   top: 0px;
+//   margin: 0 0 0 10px;
+//   font-size: 10px;
+//   width: 110px;
+// }
+.newsFeedActionBody p{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 9px;
+  width: 100%;
+}
+.newsFeedBadgeIcon > img{
+  display: inline;
+  margin: 0;
+  padding: 0;
+  float: right;
+  width: 40px;
+  margin: 0 17px 0 0;
+}
+.newsFeedName{
+  font-weight: 500;
+}
+.newsFeedHi{
+  color: #357dbe;
+  border: none !important;
+  font-weight: 500;
+  display: inline !important;
+}
+.badgeDescription{
+  font-weight: 500;
+}

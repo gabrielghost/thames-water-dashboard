@@ -9,8 +9,8 @@
 //'with a little help from my friends': https://stackoverflow.com/questions/19396180/how-to-spread-dynamic-divs-vertically-evenly
 
 .bodyBarLong ul {
-      margin:0;
-      padding:0;
+  margin:0;
+  padding:0;
   display: table;
   table-layout: fixed;
   width: 100%;
@@ -20,29 +20,42 @@
   box-sizing: border-box;
 }
 
-.bodyBarLong li {
-  text-align: center;
+.bodyBarLong ul li {
+  text-align: left;
   display: table-row;
-  background: pink;
+  padding:0;
+}
+.bodyBarLong .video{
   margin:0;
   padding:0;
 }
-.bodyBarLong .bump{
-  text-align: center;
-  display: table-row;
-  background: pink;
+.bodyBarLong .video .newsFeedActionBody img{
+  height: 50px;
+}
+.bodyBarLong .teamAchievement{
   margin:0;
   padding:0;
-  height: 120px !important;
+}
+.bodyBarLong .newsFeedAction{
+  margin:0;
+  padding:0;
+}
+.bodyBarLong .badge{
+  margin:0;
+  padding:0;
+}
+.bodyBarLong .newsFeedBadge .newsFeedActionBody img {
+  width: 30px;
 }
 .bodyBarLong span {
   display: table-cell;
   vertical-align: middle;
-  border-top: 1px solid green;
+  // border-top: 1px solid green;
   margin:0;
   padding:0;
+  border-top: 1px solid rgba(185, 185, 185, 0.23);
 }
 .bodyBarLong li:first-child span
 {
-    border: none; /* no top border on first li */
+  border: none; /* no top border on first li */
 }
