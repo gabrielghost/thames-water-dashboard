@@ -4,7 +4,8 @@ import CircleTile from './tiles/circleTile'
 import GraphTile from './tiles/graphTile'
 import WideBoyTile from './tiles/wideboytile'
 import LeaderBoard from './tiles/leaderboard'
-import ActionListTile from './tiles/actionlisttile'
+import NotificationsTile from './tiles/notificationsTile'
+import BadgesTile from './tiles/badgesTile'
 import NewsFeed from './tiles/newsfeed'
 import Header from './header'
 import * as actions from '../actions'
@@ -22,8 +23,8 @@ class Dashboard extends Component {
         <Header />
         <Grid>
           <Col xs={12} s={12} md={3} className='column' >
-            <ActionListTile data={db.notifications} />
-            <ActionListTile data={db.badges} />
+            <NotificationsTile data={db.notifications} />
+            <BadgesTile data={db.badges} />
             <LeaderBoard data={db.teamScores} />
           </Col>
           <Col xs={12} s={12} md={3} lg={6} className='column' >
