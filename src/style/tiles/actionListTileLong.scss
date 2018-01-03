@@ -1,0 +1,48 @@
+.titleBarLong{
+  width: 100%;
+  height: 60px;
+  padding: 20px 10px;
+  background: linear-gradient(to right, #1B3782, #1E2869);
+  line-height: 60px;
+}
+
+//'with a little help from my friends': https://stackoverflow.com/questions/19396180/how-to-spread-dynamic-divs-vertically-evenly
+
+.bodyBarLong ul {
+      margin:0;
+      padding:0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 530px;
+  border: 1px solid #c2c2c2;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.bodyBarLong li {
+  text-align: center;
+  display: table-row;
+  background: pink;
+  margin:0;
+  padding:0;
+}
+.bodyBarLong .bump{
+  text-align: center;
+  display: table-row;
+  background: pink;
+  margin:0;
+  padding:0;
+  height: 120px !important;
+}
+.bodyBarLong span {
+  display: table-cell;
+  vertical-align: middle;
+  border-top: 1px solid green;
+  margin:0;
+  padding:0;
+}
+.bodyBarLong li:first-child span
+{
+    border: none; /* no top border on first li */
+}

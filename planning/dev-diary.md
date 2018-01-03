@@ -240,8 +240,30 @@ Notice here that the background resizes when the screen is smaller so it doesn't
 #### Argh!
 ![Responsiveness Unhappy with this](./assets/responsiveness-argh.png)
 
+## Day 6
+
 #### Step 16 Leaderboard
 
 I cracked on with the leaderboard using lots of the other tools I've built for the other tiles. It doesn't calculate the leaders beyond sorting the array. This assumes that the server renders the convenient data (but also saves me time in this code test!).
 
 ![Leaderboard](./assets/leaderboard.png)
+
+Update with the CSS tweaked. Tried using the in built HTML td and tr elements but didn't work out well. Ended up using a UL and LI's for each element in the leaderboard:
+
+![Leaderboard update](./assets/leaderboard-update.png)
+
+#### Step 17 Newsfeed
+
+This *should* be fairly straightforward - it's basically the same as the badges or notifications tile, but larger and with different events. Tempted to use the generic 'actionListTile' that I built, but for now I'll create a separarte element that can maybe condensed down at a later date.
+
+Main challenge with this tile is the different sizes that each action is, and then containing them all flush within the same div. Having not come across this problem before a quick google helped me out here and I found a neat solution using a simple table layout.
+
+### Before
+
+![Newsfeed wireframe before](./assets/newsfeed-wireframe-before.png)
+
+### After
+
+![Newsfeed wireframe after](./assets/newsfeed-wireframe-after.png)
+
+Notice here that the other elements have been squashed to make way for the jumbo element - this way we can include specially sized elements, with the default ones making way.

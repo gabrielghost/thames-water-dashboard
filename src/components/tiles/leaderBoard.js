@@ -68,7 +68,7 @@ class Leaderboard extends Component {
 
                   return (
                     <ul>
-                      <li><p>{i + 1}.</p></li>
+                      <li className={'leaderboardPosition'}><p>{i + 1}.</p></li>
                       <li><div className={'actionIcon'}><img src={object.logo} /></div></li>
                       <li className={'teamName'}><p>{object.teamName}</p></li>
                       <li className={'leaderboardIndicator'}><p><Indicator number={positionMovement} size={'regular'} /></p></li>

@@ -34,7 +34,7 @@ class Dashboard extends Component {
             <WideBoyTile data={db.myScores.locations} />
           </Col>
           <Col xs={12} s={12} md={3} className='column' >
-            <NewsFeed props={db.newsFeed} />
+            <NewsFeed data={db.newsFeed} />
           </Col>
         </Grid>
       </div>
