@@ -38,8 +38,7 @@ class Leaderboard extends Component {
               <div className={`${this.selected('month')} monthTab`}><button onClick={this.handleClick.bind(this, 'month')}>Monthly</button></div>
             </div>
           </div>
-            <div className='leaderBoardBar'>
-              <ul>
+            <div className='leaderboardBar'>
                 {sortedArray.map(function (object, i) {
                                     let positionMovement
                   if (timeframe === 'week') {
@@ -67,17 +66,16 @@ class Leaderboard extends Component {
                     }
                   }
 
-                  return (<li>
-                    <tr>
-                      <td>{i + 1}</td>
-                      <td><div className={'actionIcon'}><img src={object.logo} /></div></td>
-                      <td>{object.teamName}</td>
-                      <td><Indicator number={positionMovement} size={'regular'} /></td>
-                      <td><p>{score}</p></td>
-                    </tr>
-                  </li>)
+                  return (
+                    <ul>
+                      <li><p>{i + 1}.</p></li>
+                      <li><div className={'actionIcon'}><img src={object.logo} /></div></li>
+                      <li className={'teamName'}><p>{object.teamName}</p></li>
+                      <li className={'leaderboardIndicator'}><p><Indicator number={positionMovement} size={'regular'} /></p></li>
+                      <li className={'leaderboardScore'}><p>{score}</p></li>
+                    </ul>
+                  )
                 })}
-              </ul>
             </div>
           </div>
         </Col>

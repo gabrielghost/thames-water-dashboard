@@ -5,20 +5,36 @@
 .Leaderboard h3{
   padding: 10px;
 }
-.Leaderboard li{
-  height: 40px;
-}
-.Leaderboard li td p{
-  font-size: 23px !important;
-}
-.leaderBoardBar ul li{
-  width: 100%;
-  height: 40px;
-  background-color: white;
-}
-.leaderBoardBar ul{
+.leaderboardBar ul{
   list-style: none;
+  height: 40px;
+  margin: 0;
   padding: 0;
+    display: table;
+}
+.leaderboardBar li{
+  float: left;
+  height: 100%;
+  vertical-align: middle;
+  display: table-cell;
+  line-height: 40px;
+  margin: 0 5px;
+}
+.teamName{
+  width: 75px !important;
+}
+.leaderboardIndicator{
+  width: 20px;
+}
+.leaderboardScore{
+  font-weight: 500;
+  color: #C22E72;
+}
+.leaderboardBar li p{
+  margin: 0;
+}
+.leaderBoardBar{
+height: 120px;
 }
 .leaderBoardTab{
   text-align: center;
