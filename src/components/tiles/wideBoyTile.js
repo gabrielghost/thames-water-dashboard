@@ -24,7 +24,7 @@ export default (props) => {
             <li><Col xs={3} s={3} md={3} className='wideCircleWrapChildren'><div className='wideCircleWithIndicator'><Indicator number={-1} size={'large'} /><h3>{addCommas(arraySum(data.circle4.history))}</h3></div><div className='infoWideBoy'><p>{data.circle4.title}</p></div></Col></li>
           </ul>
         </div>
-        <div className='imageWideBoy'><p>{data.title}</p></div>
+        <div className='imageWideBoy'><h3>{data.title}</h3></div>
       </div>
     </Col>
   )

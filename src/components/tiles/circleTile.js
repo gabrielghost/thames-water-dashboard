@@ -8,7 +8,7 @@ if (props.data.title !== 'Accuracy') {
   return (<Col xs={12} md={6} className='tile'>
     <div className={`tileBody ${props.data.title}`}>
       <div className='circleWrap'><div className='circle'><h3>{props.data.today}</h3></div></div>
-      <div className='imageOverlayText'><p>{props.data.title}</p></div>
+      <div className='imageOverlayText'><h3>{props.data.title}</h3></div>
       <div className='imageOverlay'></div>
       <div className='image'></div>
       <div className='info'>
@@ -28,7 +28,7 @@ if (props.data.title !== 'Accuracy') {
   return (<Col xs={12} md={6} className='tile'>
     <div className={`tileBody ${props.data.title}`}>
       <div className='circleWrap'><div className='circle'><h3>{props.data.today}</h3></div></div>
-      <div className='imageOverlayText'><p>{props.data.title}</p></div>
+      <div className='imageOverlayText'><h3>{props.data.title}</h3></div>
       <div className='imageOverlay'></div>
       <div className='image'></div>
       <div className='info'>

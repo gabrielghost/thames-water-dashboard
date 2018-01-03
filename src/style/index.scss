@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
 // @import url(https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css)
 @import './header/main';
 @import './libraries/circularProgressbar';
@@ -13,6 +13,7 @@
 @import './microComponents/indicator';
 @import './microComponents/action';
 @import './microComponents/progress';
+@import './fonts/fonts';
 
 
 @media (max-width:462px) and (min-width:260px){
@@ -74,12 +75,6 @@ nav:after{
   .container {
       min-width: 300px !important;
   }
-}
-
-body{
-  font-family: 'Roboto';
-  color: rgb(120, 120, 120);
-  background-color: #EEEEEE;
 }
 // .default{
 //   padding: 0;

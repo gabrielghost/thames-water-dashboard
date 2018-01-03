@@ -32,7 +32,7 @@ class Leaderboard extends Component {
       <div>
         <Col xs={12} md={12} className='tile'>
           <div className='tileBody'>
-            <div className={`titleBar ${this.props.data.dashReducer.teamScores.title}`}><p>{this.props.data.dashReducer.teamScores.title}</p>
+            <div className={`${this.props.data.dashReducer.teamScores.title}`}><h3>{this.props.data.dashReducer.teamScores.title}</h3>
             <div className='leaderBoardTab'>
               <div className={`${this.selected('week')} weekTab`}><button onClick={this.handleClick.bind(this, 'week')}>Weekly</button></div>
               <div className={`${this.selected('month')} monthTab`}><button onClick={this.handleClick.bind(this, 'month')}>Monthly</button></div>

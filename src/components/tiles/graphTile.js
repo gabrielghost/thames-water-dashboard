@@ -10,7 +10,7 @@ export default (props) => {
     <div>
       <Col xs={12} md={6} className='tile'>
         <div className={`tileBody ${props.data.title}`}>
-          <div className='chartOverlayText'><p>{props.data.title}</p></div>
+          <div className='chartOverlayText'><h3>{props.data.title}</h3></div>
           <div className='chart'>
             <Chart data={props.data.history} />
           </div>
