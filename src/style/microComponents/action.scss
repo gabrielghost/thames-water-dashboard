@@ -80,7 +80,11 @@ font-size: 9px;
 }
 .Accuracy .info {
   font-size: 10px;
-  padding: 40px 10px 10px 10px;
+  padding: 40px 20px 10px 20px;
+}
+.Accuracy .info p{
+  margin-bottom: 1.2rem;
+  padding-top: 0px;
 }
 .Accuracy .circle {
   margin-top: 20px !important;

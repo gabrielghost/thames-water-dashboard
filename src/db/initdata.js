@@ -324,7 +324,7 @@ export const dashReducer = {
         lastWeek: 2,
         thisMonth: 1,
         lastMonth: 2,
-        history: [340, 340, 320, 310]
+        history: [340, 340, 320, 600]
       },
       {
         teamName: 'Southern Sharks',
@@ -333,7 +333,7 @@ export const dashReducer = {
         lastWeek: 1,
         thisMonth: 2,
         lastMonth: 3,
-        history: [379, 270, 320, 310]
+        history: [379, 270, 370, 340]
       },
       {
         teamName: 'Northern Ninjas',

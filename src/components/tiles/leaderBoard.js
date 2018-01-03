@@ -41,22 +41,32 @@ class Leaderboard extends Component {
             <div className='leaderBoardBar'>
               <ul>
                 {sortedArray.map(function (object, i) {
+                                    let positionMovement
                   if (timeframe === 'week') {
                     score = object.history[0]
+                    if (object.thisWeek > object.lastWeek) {
+                      positionMovement = -1
+                    }
+                    if (object.thisWeek < object.lastWeek) {
+                      positionMovement = 1
+                    }
+                    if (object.thisWeek === object.lastWeek) {
+                      positionMovement = 0
+                    }
                   }
                   if (timeframe === 'month') {
                     score = object.history.reduce((a, b) => { return a + b }, 0)
+                    if (object.thisMonth > object.lastMonth) {
+                      positionMovement = -1
+                    }
+                    if (object.thisMonth < object.lastMonth) {
+                      positionMovement = 1
+                    }
+                    if (object.thisMonth === object.lastMonth) {
+                      positionMovement = 0
+                    }
                   }
-                  let positionMovement
-                  if (object.thisWeek > object.lastWeek) {
-                    positionMovement = 1
-                  }
-                  if (object.thisWeek < object.lastWeek) {
-                    positionMovement = -1
-                  }
-                  if (object.thisWeek === object.lastWeek) {
-                    positionMovement = 0
-                  }
+
                   return (<li>
                     <tr>
                       <td>{i + 1}</td>

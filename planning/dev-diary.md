@@ -223,6 +223,8 @@ Need to complete the graph tile, the news feed and the leaderboard. Main thing i
 
 So working through the various cases. I'm not quite happy with how the header is different width to the 3 columns when the 2nd colum halfs it's width but it will do for now as I can't think of a better solution yet.
 
+The main issue here however is that whilst the responsivenes works in the Chrome/Firefox device emulator - it doesn't resize for mobile browsers - something that I would need to provide when working on a production version.
+
 #### Nexus 4
 
 Notice here that the background resizes when the screen is smaller so it doesn't end up repeating itself.
@@ -238,3 +240,8 @@ Notice here that the background resizes when the screen is smaller so it doesn't
 #### Argh!
 ![Responsiveness Unhappy with this](./assets/responsiveness-argh.png)
 
+#### Step 16 Leaderboard
+
+I cracked on with the leaderboard using lots of the other tools I've built for the other tiles. It doesn't calculate the leaders beyond sorting the array. This assumes that the server renders the convenient data (but also saves me time in this code test!).
+
+![Leaderboard](./assets/leaderboard.png)

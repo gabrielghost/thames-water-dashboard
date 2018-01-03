@@ -41,10 +41,22 @@ class Progress extends React.Component {
       transition: `width ${animation}ms`,
       height: height
     };
+    let wording
+    if (completed > 80){
+      wording = 'Great!'
+    } else if (completed > 60){
+      wording = 'Good'
+    } else if (completed > 40){
+      wording = 'Ok'
+    } else if (completed > 20){
+      wording = 'Poor'
+    } else if (completed > 20){
+      wording = 'Go home!'
+    }
 
     return (
       <div className={className || "progressbar-container"} {...rest}>
-        <div className="progressbar-progress" style={style}>{children}</div>
+        <div className="progressbar-progress" style={style}>{children}<div className='progressbar-wording'><p>▼ {wording}</p></div></div>
       </div>
     );
   }
