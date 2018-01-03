@@ -280,3 +280,15 @@ There is a little element which might be useful to make into a component - it's 
 Here we are - not perfect but will do for now, now just to finish some of the more subtle CSS formatting.
 
 ![Newsfeed badge update](./assets/newsfeed-badge-update.png)
+
+With the CSS tweaked - not totally happy with how I got to the result in some cases but good enough for now:
+
+
+![Newsfeed update 2](./assets/newsfeed-update-2.png)
+
+#### Step 18 Unread and 'View All'
+
+Going back to the badges and notifications tiles, need ot add an unread badge and the ability to view all. 
+
+It's hard to know how 'unread' shoud be defined in this context - the items aren't like emails or texts where you open them to see the full details, so I suppose without more information I'll simply make it look correct for now, and have the ability to view all of the actions in the database. If an idea hits me later of how to best process the actions, then I might give it a go.
+

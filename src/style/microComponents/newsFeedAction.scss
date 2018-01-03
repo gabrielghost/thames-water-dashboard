@@ -23,14 +23,10 @@
   margin: 0 0 0 10px;
   font-size: 10px;
 }
-// .newsFeedBadge .newsFeedActionBody{
-//   display: inline-block;
-//   position: relative;
-//   top: 0px;
-//   margin: 0 0 0 10px;
-//   font-size: 10px;
-//   width: 110px;
-// }
+.teamAchievement .newsFeedActionBody{
+  line-height: 10px;
+  top: -10px;
+}
 .newsFeedActionBody p{
   position: relative;
   margin: 0;
@@ -40,6 +36,14 @@
 }
 .newsFeedBadgeIcon > img{
   display: inline;
+  margin: 0;
+  padding: 0;
+  float: right;
+  width: 40px;
+  margin: 0 17px 0 0;
+}
+.newsFeedBadgeIcon{
+  display: inline-block;
   margin: 0;
   padding: 0;
   float: right;

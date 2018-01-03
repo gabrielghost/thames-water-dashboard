@@ -17,73 +17,10 @@
 @import './microComponents/progress';
 @import './microComponents/highlightBadge';
 @import './microComponents/pointsBadge';
-@import './fonts/fonts';
+@import './microComponents/unread';
+@import './fonts';
+@import './media';
 
-
-@media (max-width:462px) and (min-width:260px){
-  .stretchTile{
-    height: 400px !important;
-  }
-  .wideBoyTile ul {
-    width: 100% !important;
-  }
-}
-@media (max-width:990px) and (min-width:766px){
-  .stretchTile{
-    height: 380px !important;
-    margin-bottom: 20px;
-  }
-  .wideBoyTile ul {
-    width: 100% !important;
-  }
-}
-@media (max-width:939px) and (min-width:766px){
-  .stretchTile{
-    width: 235px !important;
-  }
-  .wideBoyTile ul {
-    width: 100% !important;
-  }
-}
-
-@media (max-width:524px){
-nav:after{
-  background-size: 600%;
-}
-}
-@media (max-width:766px) and (min-width:525px){
-nav:after{
-  background-size: 300%;
-}
-}
-@media (min-width:766px){
-  .headerLogo{
-    display: relative;
-    top: -37px;
-  }
-}
-@media (max-width:1199px) and (min-width:991px){
-  .wideBoyTile ul li {
-      width: 110px !important;
-  }
-  .wideBoyTile ul{
-    margin: 0px 6px !important;
-  }
-}
-@media (max-width:1000px) and (min-width:300px){
-  .container {
-      min-width: 100% !important;
-  }
-}
-@media (max-width:300px){
-  .container {
-      min-width: 300px !important;
-  }
-}
-// .default{
-//   padding: 0;
-//   margin: 0;
-// }
 .clearBoth{
   clear: both;
 }

@@ -1,0 +1,18 @@
+.unread{
+  width: 12px;
+  height: 12px;
+  color: white;
+  background-color: #C62C6F;
+  border-radius: 50%;
+display: inline-block;
+position: relative;
+margin-left: 7px;
+}
+.unread p{
+  font-size: 8px;
+  padding: 0;
+  margin: 0 0 5px 3px;
+  text-align: center;
+  vertical-align: middle;
+    display: inline-block;
+}

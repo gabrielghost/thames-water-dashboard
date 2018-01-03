@@ -222,18 +222,40 @@ export const dashReducer = {
       {
         type: 'overtaken',
         icon: './assets/images/overtaken-icon.png',
-        arg1: 'Northern Ninjas'
+        arg1: 'Northern Ninjas',
+        unread: true
       },
       {
         type: 'achievement',
         icon: './assets/images/achievement-icon.png',
-        arg1: `We've reached our highest quality score in a month`
+        arg1: `We've reached our highest quality score in a month`,
+        unread: true
       },
       {
         type: 'errors',
         icon: './assets/images/errors-icon.png',
         arg1: 10,
-        arg2: 'week'
+        arg2: 'week',
+        unread: true
+      },
+      {
+        type: 'overtaken',
+        icon: './assets/images/overtaken-icon.png',
+        arg1: 'Northern Ninjas',
+        unread: false
+      },
+      {
+        type: 'achievement',
+        icon: './assets/images/achievement-icon.png',
+        arg1: `We've reached our highest quality score in a month`,
+        unread: false
+      },
+      {
+        type: 'errors',
+        icon: './assets/images/errors-icon.png',
+        arg1: 10,
+        arg2: 'week',
+        unread: false
       }
     ]
   },
