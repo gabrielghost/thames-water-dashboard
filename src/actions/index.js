@@ -6,7 +6,8 @@ import {
   CHART_WEEK,
   CHART_MONTH,
   CHART_ALL_TIME,
-  LEADERBOARD
+  LEADERBOARD_WEEK,
+  LEADERBOARD_MONTH
 } from './types'
 
 export function fetchData () {
@@ -26,11 +27,20 @@ export function chartType (type) {
   }
 }
 export function leaderboardTimeScale (type) {
-  return function (dispatch) {
-    dispatch({
-      type: LEADERBOARD,
-      payload: type
-    })
+  if (type === 'week') {
+    return function (dispatch) {
+      dispatch({
+        type: LEADERBOARD_WEEK,
+        payload: type
+      })
+    }
+  } else if (type === 'month') {
+    return function (dispatch) {
+      dispatch({
+        type: LEADERBOARD_MONTH,
+        payload: type
+      })
+    }
   }
 }
 export function initialize () {

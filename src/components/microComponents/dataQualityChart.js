@@ -13,14 +13,6 @@ export default (props) => {
     }
   }
 
-  const selected = function (type) {
-    if (type === this.props.data.dashReducer.state.mainGraph) {
-      return 'btnSelect'
-    } else {
-      return 'btnDeSelect'
-    }
-  }
-
   const chartGen = function (data) {
     return (
       <LineChart

@@ -9,46 +9,61 @@ class Leaderboard extends Component {
     this.props.leaderboardTimeScale(value)
   }
 
-  positionMovement (thisWeek, lastWeek) {
-    if (thisWeek > lastWeek) {
-      return 1
-    }
-    if (thisWeek < lastWeek) {
-      return -1
-    }
-    if (thisWeek === lastWeek) {
-      return 0
-    }
-  }
-
   selected (type) {
-    if (type === this.props.data.dashReducer.teamScores.view) {
-      return 'btnSelect'
+    if (type === this.props.data.dashReducer.leaderBoard) {
+      return 'tabSelect'
     } else {
-      return 'btnDeSelect'
+      return 'tabDeSelect'
     }
   }
 
   render () {
     let array = this.props.data.dashReducer.teamScores.data
-    let sortedArray = array.sort((a, b) => { return a.thisWeek - b.thisWeek })
+    let timeframe = this.props.data.dashReducer.leaderBoard
+    let sortedArray
+    let score
+    if (timeframe === 'week') {
+      sortedArray = array.sort((a, b) => { return a.thisWeek - b.thisWeek })
+    }
+    if (timeframe === 'month') {
+      sortedArray = array.sort((a, b) => { return a.thisMonth - b.thisMonth })
+    }
     return (
       <div>
         <Col xs={12} md={12} className='tile'>
           <div className='tileBody'>
-            <div className={`titleBar ${this.props.data.dashReducer.teamScores.title}`}><p>{this.props.data.dashReducer.teamScores.title}</p></div>
-            <button className={this.selected(0)} onClick={this.handleClick.bind(this, 0)}>Week</button>
-            <button className={this.selected(1)} onClick={this.handleClick.bind(this, 1)}>Month</button>
+            <div className={`titleBar ${this.props.data.dashReducer.teamScores.title}`}><p>{this.props.data.dashReducer.teamScores.title}</p>
+            <div className='leaderBoardTab'>
+              <div className={`${this.selected('week')} weekTab`}><button onClick={this.handleClick.bind(this, 'week')}>Weekly</button></div>
+              <div className={`${this.selected('month')} monthTab`}><button onClick={this.handleClick.bind(this, 'month')}>Monthly</button></div>
+            </div>
+          </div>
             <div className='leaderBoardBar'>
               <ul>
                 {sortedArray.map(function (object, i) {
+                  if (timeframe === 'week') {
+                    score = object.history[0]
+                  }
+                  if (timeframe === 'month') {
+                    score = object.history.reduce((a, b) => { return a + b }, 0)
+                  }
+                  let positionMovement
+                  if (object.thisWeek > object.lastWeek) {
+                    positionMovement = 1
+                  }
+                  if (object.thisWeek < object.lastWeek) {
+                    positionMovement = -1
+                  }
+                  if (object.thisWeek === object.lastWeek) {
+                    positionMovement = 0
+                  }
                   return (<li>
                     <tr>
                       <td>{i + 1}</td>
                       <td><div className={'actionIcon'}><img src={object.logo} /></div></td>
                       <td>{object.teamName}</td>
-                      <td><Indicator number={-1} size={'regular'} /></td>
-                      <td><p>{object.history[0]}</p></td>
+                      <td><Indicator number={positionMovement} size={'regular'} /></td>
+                      <td><p>{score}</p></td>
                     </tr>
                   </li>)
                 })}

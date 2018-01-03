@@ -1,5 +1,6 @@
 export const dashReducer = {
-  state: { mainChart: 0 },
+  mainChart: 0,
+  leaderBoard: 'week',
   userName: 'Praful Yadev',
   teamName: 'Southern Sharks',
   myScores: {
@@ -321,21 +322,27 @@ export const dashReducer = {
         logo: './assets/images/western-wolves-logo.png',
         thisWeek: 3,
         lastWeek: 2,
-        history: [340, 340, 320, 310, 360, 480, 490, 500]
+        thisMonth: 1,
+        lastMonth: 2,
+        history: [340, 340, 320, 310]
       },
       {
         teamName: 'Southern Sharks',
         logo: './assets/images/southern-sharks-logo.png',
         thisWeek: 1,
         lastWeek: 1,
-        history: [379, 270, 320, 310, 360, 480, 490, 500]
+        thisMonth: 2,
+        lastMonth: 3,
+        history: [379, 270, 320, 310]
       },
       {
         teamName: 'Northern Ninjas',
         logo: './assets/images/northern-ninjas-logo.png',
         thisWeek: 2,
         lastWeek: 3,
-        history: [370, 333, 320, 310, 360, 480, 490, 500]
+        thisMonth: 3,
+        lastMonth: 1,
+        history: [370, 333, 320, 310]
       }
     ]
   }

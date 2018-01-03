@@ -19,7 +19,7 @@ class OverallTeamChart extends Component {
   }
 
   selected (type) {
-    if (type === this.props.data.dashReducer.state.mainChart) {
+    if (type === this.props.data.dashReducer.mainChart) {
       return 'btnSelect'
     } else {
       return 'btnDeSelect'
@@ -54,7 +54,7 @@ class OverallTeamChart extends Component {
         <p className='teamChartMe'>● Me</p>
         <p className='teamChartMyTeam'>● My Team</p>
 
-        {this.chartGen(this.props.data.dashReducer.state.mainChart)}
+        {this.chartGen(this.props.data.dashReducer.mainChart)}
       </div>
     )
   }
