@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
-import Indicator from '../microComponents/indicator'
+import Indicator from '../micro_components/indicator'
 
 export default (props) => {
   const data = props.data

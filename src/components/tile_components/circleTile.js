@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
-import Percentage from '../microComponents/percentage'
-import Progress from '../microComponents/progress'
+import Percentage from '../micro_components/percentage'
+import Progress from '../micro_components/progress'
 
 export default (props) => {
 if (props.data.title !== 'Accuracy') {

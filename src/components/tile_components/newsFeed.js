@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
-import NewsFeedAction from '../microComponents/NewsFeedAction'
+import NewsFeedAction from '../micro_components/NewsFeedAction'
 
 export default (props) => {
   let array = props.data.data

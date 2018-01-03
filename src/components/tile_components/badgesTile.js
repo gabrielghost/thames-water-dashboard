@@ -2,40 +2,39 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Col } from 'react-bootstrap'
 import * as actions from '../../actions'
-import Action from '../microComponents/action'
-import Unread from '../microComponents/unread'
+import Action from '../micro_components/action'
+import Unread from '../micro_components/unread'
 
-class NotificationsTile extends Component {
-  handleClick () {
-    this.props.toggleNotifications()
+class BadgesTile extends Component {
+  handleClick (value) {
+    this.props.toggleBadges()
   }
 
   render () {
-    let notifArray = this.props.data.dashReducer.notifications.data
+    let notifArray = this.props.data.dashReducer.badges.data
     let unreadCount = 0
     let displayArray
     let expanded
     let buttonText
+    if (this.props.data.dashReducer.viewAllBadges === false) {
+      displayArray = notifArray.slice(0, 3)
+      expanded = ''
+      buttonText = 'VIEW ALL'
+    } else if (this.props.data.dashReducer.viewAllBadges === true) {
+      displayArray = notifArray
+      expanded = 'expanded'
+      buttonText = '✖'
+    }
     notifArray.map(function (object, i) {
       if (object.unread === true) {
         unreadCount++
       }
     })
-    if (this.props.data.dashReducer.viewAllNotifications === false) {
-      displayArray = notifArray.slice(0, 3)
-            expanded = ''
-            buttonText = 'VIEW ALL'
-    } else if (this.props.data.dashReducer.viewAllNotifications === true) {
-      displayArray = notifArray
-            expanded = 'expanded'
-            buttonText = '✖'
-    }
-
     return (<Col xs={12} md={12} className='tile'>
       <div className='tileBody'>
-        <div className={`titleBar ${this.props.data.dashReducer.notifications.title}`}>
+        <div className={`titleBar ${this.props.data.dashReducer.badges.title}`}>
           <div className={`title`}>
-            <h3>{this.props.data.dashReducer.notifications.title}</h3>
+            <h3>{this.props.data.dashReducer.badges.title}</h3>
             <Unread number={unreadCount} />
             <button onClick={this.handleClick.bind(this)}>{buttonText}</button>
           </div>
@@ -43,7 +42,7 @@ class NotificationsTile extends Component {
         <div className={`bodyBar ${expanded}`}>
           <ul>
             {displayArray.map(function (object, i) {
-              return (<li><Action obj={object} key={i} /></li>)
+              return (<li key={i}><Action obj={object} /></li>)
             })}
           </ul>
         </div>
@@ -57,4 +56,4 @@ function mapStateToProps (state) {
   }
 }
 
-export default connect(mapStateToProps, actions)(NotificationsTile)
+export default connect(mapStateToProps, actions)(BadgesTile)

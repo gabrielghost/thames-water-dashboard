@@ -37,5 +37,5 @@ export default (props) => {
 
   let style = classAssign(cent)
 
-  return (<div className={style}><p className={`number`}>{Math.abs(cent)}%</p><Indicator number={cent} size={'regular'}/></div>)
+  return (<div className={style}><p className={`number`}>{Math.abs(cent)}%</p><Indicator number={cent} size={'regular'} /></div>)
 }

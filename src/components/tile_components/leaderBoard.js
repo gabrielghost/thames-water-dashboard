@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Col } from 'react-bootstrap'
 import * as actions from '../../actions'
-import Indicator from '../microComponents/indicator'
+import Indicator from '../micro_components/indicator'
 
 class Leaderboard extends Component {
   handleClick (value) {
@@ -67,11 +67,11 @@ class Leaderboard extends Component {
                   }
 
                   return (
-                    <ul>
+                    <ul key={i}>
                       <li className={'leaderboardPosition'}><p>{i + 1}.</p></li>
                       <li><div className={'actionIcon'}><img src={object.logo} /></div></li>
                       <li className={'teamName'}><p>{object.teamName}</p></li>
-                      <li className={'leaderboardIndicator'}><p><Indicator number={positionMovement} size={'regular'} /></p></li>
+                      <li className={'leaderboardIndicator'}><Indicator number={positionMovement} size={'regular'} /></li>
                       <li className={'leaderboardScore'}><p>{score}</p></li>
                     </ul>
                   )
