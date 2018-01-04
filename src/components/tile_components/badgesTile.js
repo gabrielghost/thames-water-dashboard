@@ -42,7 +42,7 @@ class BadgesTile extends Component {
         <div className={`bodyBar ${expanded}`}>
           <ul>
             {displayArray.map(function (object, i) {
-              return (<li key={i}><Action obj={object} /></li>)
+              return (<li ><Action obj={object} key={i} /></li>)
             })}
           </ul>
         </div>

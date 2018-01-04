@@ -24,7 +24,7 @@ export default (props) => {
         >
 
           <XAxis dataKey='name' padding={{right: 5, left: 10}} stroke={'#bfbaba'} />
-          <Line type='monotone' dataKey='team' stroke='#C22E72' strokeWidth={3} yAxisId={0} dot={null} />
+          <Line type='monotone' dataKey='target' stroke='#C22E72' strokeWidth={3} yAxisId={0} dot={null} />
           <Line type='monotone' dataKey='user' stroke='#C22E72' strokeWidth={3} yAxisId={1} dot={null} />
           <ReferenceLine y={70} label='' stroke='white' strokeDasharray='5 5' />
         </LineChart>

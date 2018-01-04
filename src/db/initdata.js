@@ -21,7 +21,7 @@ export const dashReducer = {
       title: 'Data Quality',
       today: 73,
       target: {
-        base: 83,
+        base: 70,
         dailyIncrease: 2
       },
       history: [
@@ -50,7 +50,7 @@ export const dashReducer = {
         {user: 60, amt: 1},
         {user: 63, amt: 1},
         {user: 67, amt: 1},
-        {user: 73, amt: 1}
+        {user: 73, amt: 1},
        ]
     },
     bonusPoints: {

@@ -31,11 +31,18 @@ export default (props) => {
             <CircularProgressbar percentage={data.today} initialAnimation={true} textForPercentage={(pct) => `${props.data.today}`} />
             <p className='outOf100'>OUT OF 100</p>
           </div>
-          <div className='chartInfoCentre'></div>
+          <div className='chartInfoCentre'>
+          </div>
+          <div className='chartInfoIcons'>
+          <img src={'../assets/images/score-icon.png'} />
+          <img src={'./assets/images/target-icon.png'} />
+        <Indicator number={progress} size={'large'} />
+                  </div>
             <div className='chartInfoRight'>
               <ul>
                 <li><p>Score - {data.today}</p></li>
-                <li><Indicator number={progress} size={'large'} />{polarity}{percentage}%</li>
+                <li><p>Target - {data.target.base}</p></li>
+                <li className='chartInfoPercentage'><p>{polarity} {percentage}%</p></li>
               </ul>
             </div>
           </div>

@@ -48,7 +48,7 @@
   display: inline-block;
 }
 .chartInfoRight{
-  width: 47%;
+  width: 40%;
   margin: 0;
   display: inline-block;
   position: relative;
@@ -56,10 +56,22 @@
 }
 .chartInfoRight li{
   list-style: none;
+  display: inline-block;
+  width: 70px;
+  height: 22px;
+}
+.chartInfoRight li p{
+  display: inline-block;
+}
+.chartInfoPercentage p{
+  font-weight: 400;
+  font-size: 13px;
+  color: #71ACA2;
 }
 .chartInfoRight ul{
   margin: 0;
-  padding: 0 0 0 40px;
+  padding: 10px 0 0 30px;
+  display: inline-block;
 }
 .chartInfoRight li p{
   margin: 0;
@@ -69,8 +81,27 @@
   height: 10px;
   background-color: rgb(219, 219, 219);
   display: inline-block;
-    position: relative;
+  position: relative;
   top: -36px;
+}
+.chartInfoIcons img{
+  height: 13px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 4px;
+  display: inline-block;
+}
+.chartInfoIcons{
+  width: 20px;
+  position: relative;
+  display: inline-block;
+  top: -17px;
+  left: 29px;
+}
+.chartInfoIcons p{
+  padding: 0;
+  margin: 0;
 }
 .chart{
   background-image: radial-gradient(center bottom, ellipse cover, #1669AD, #1D4793);

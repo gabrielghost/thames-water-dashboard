@@ -38,55 +38,55 @@ class Leaderboard extends Component {
               <div className={`${this.selected('month')} monthTab`}><button onClick={this.handleClick.bind(this, 'month')}>Monthly</button></div>
             </div>
           </div>
-            <div className='leaderboardBar'>
-                {sortedArray.map(function (object, i) {
-                                    let positionMovement
-                  if (timeframe === 'week') {
-                    score = object.history[0]
-                    if (object.thisWeek > object.lastWeek) {
-                      positionMovement = -1
-                    }
-                    if (object.thisWeek < object.lastWeek) {
-                      positionMovement = 1
-                    }
-                    if (object.thisWeek === object.lastWeek) {
-                      positionMovement = 0
-                    }
-                  }
-                  if (timeframe === 'month') {
-                    score = object.history.reduce((a, b) => { return a + b }, 0)
-                    if (object.thisMonth > object.lastMonth) {
-                      positionMovement = -1
-                    }
-                    if (object.thisMonth < object.lastMonth) {
-                      positionMovement = 1
-                    }
-                    if (object.thisMonth === object.lastMonth) {
-                      positionMovement = 0
-                    }
-                  }
+          <div className='leaderboardBar'>
+            {sortedArray.map(function (object, i) {
+              let positionMovement
+              if (timeframe === 'week') {
+                score = object.history[0]
+                if (object.thisWeek > object.lastWeek) {
+                  positionMovement = -1
+                }
+                if (object.thisWeek < object.lastWeek) {
+                  positionMovement = 1
+                }
+                if (object.thisWeek === object.lastWeek) {
+                  positionMovement = 0
+                }
+              }
+              if (timeframe === 'month') {
+                score = object.history.reduce((a, b) => { return a + b }, 0)
+                if (object.thisMonth > object.lastMonth) {
+                  positionMovement = -1
+                }
+                if (object.thisMonth < object.lastMonth) {
+                  positionMovement = 1
+                }
+                if (object.thisMonth === object.lastMonth) {
+                  positionMovement = 0
+                }
+              }
 
-                  return (
-                    <ul key={i}>
-                      <li className={'leaderboardPosition'}><p>{i + 1}.</p></li>
-                      <li><div className={'actionIcon'}><img src={object.logo} /></div></li>
-                      <li className={'teamName'}><p>{object.teamName}</p></li>
-                      <li className={'leaderboardIndicator'}><Indicator number={positionMovement} size={'regular'} /></li>
-                      <li className={'leaderboardScore'}><p>{score}</p></li>
-                    </ul>
-                  )
-                })}
-            </div>
+              return (
+                <ul key={i}>
+                  <li className={'leaderboardPosition'}><p>{i + 1}.</p></li>
+                  <li><div className={'actionIcon'}><img src={object.logo} /></div></li>
+                  <li className={'teamName'}><p>{object.teamName}</p></li>
+                  <li className={'leaderboardIndicator'}><Indicator number={positionMovement} size={'regular'} /></li>
+                  <li className={'leaderboardScore'}><p>{score}</p></li>
+                </ul>
+              )
+            })}
           </div>
-        </Col>
-      </div>)
-    }
+        </div>
+      </Col>
+    </div>)
   }
+}
 
-  function mapStateToProps (state) {
-    return {
-      data: state
-    }
+function mapStateToProps (state) {
+  return {
+    data: state
   }
+}
 
-  export default connect(mapStateToProps, actions)(Leaderboard)
+export default connect(mapStateToProps, actions)(Leaderboard)

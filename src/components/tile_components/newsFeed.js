@@ -11,7 +11,7 @@ export default (props) => {
           <div className='bodyBarLong'>
             <ul>
               {array.map(function (object, i) {
-                return (<li><span><NewsFeedAction obj={object} key={i} /></span></li>)
+                return (<li><span><NewsFeedAction obj={object} /></span></li>)
               })}
             </ul>
           </div>
