@@ -19,7 +19,7 @@
 .newsFeedActionBody{
   display: inline-block;
   position: relative;
-  top: 0px;
+  top: 5px;
   margin: 0 0 0 10px;
   font-size: 10px;
 }
@@ -41,6 +41,8 @@
   float: right;
   width: 40px;
   margin: 0 17px 0 0;
+  position: relative;
+top: 11px;
 }
 .newsFeedBadgeIcon{
   display: inline-block;

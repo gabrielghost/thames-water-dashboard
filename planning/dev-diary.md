@@ -68,7 +68,7 @@ Either teams or individuals:
 
 Map all of the above onto a wireframe that corresponds with the reference image. I'll be using React/Redux as a front end framework - I probably am more experienced with angular but I've been learning react and this is a good chance to put it into practice.
 
-![wireframe](./assets/wireframe.png) 
+![wireframe](./assets/wireframe.png?raw=true) 
 
 #### Step 3 - Data
 
@@ -215,6 +215,10 @@ This brings together a lot of elements that have been used in the header, so sho
 
 ![Graph tile update](./assets/graph-tile-update-1.png)
 
+Not totally happy with the bodged styling here -will revisit if there is time at the end:
+
+![Graph tile update 2](./assets/graph-tile-update-2.png)
+
 ## Day 5
 
 Need to complete the graph tile, the news feed and the leaderboard. Main thing is to also make the header responsive as the UL's don't respond when the dimension changes. Think this would be the best place to start, this way can be sure that all elements are responsive moving forward and can address unexpected issues when they arise. Next step after that is to finish up the graph tile. 
@@ -302,5 +306,13 @@ Will work on the CSS transitions for the 'view all' functionality, refactor wher
 
 #### Step 19 Tidy things up, inside and out.
 
-The CSS could be tweaked here and there, and the code could definitely do with some streamlining.
+The CSS could be tweaked here and there, and the code could definitely do with some streamlining. Though, unfortunatly time is up, so will have to submit as-is!!
+
+See here what I got up to:
+
+![Firefox Final Update](./assets/firefox-final-update.png)
+
+Unfortunately I noticed it looks horrible on Chrome! Damnit! no real time to fix it now......;-(
+
+![Chrome Final Update](./assets/chrome-final-update.png)
 
