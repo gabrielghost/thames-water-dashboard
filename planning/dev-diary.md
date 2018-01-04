@@ -68,7 +68,7 @@ Either teams or individuals:
 
 Map all of the above onto a wireframe that corresponds with the reference image. I'll be using React/Redux as a front end framework - I probably am more experienced with angular but I've been learning react and this is a good chance to put it into practice.
 
-![wireframe](/Assets/wireframe.png?raw=true) 
+![wireframe](https://github.com/gabrielghost/thames-water-dashboard/blob/master/planning/Assets/wireframe.png) 
 
 #### Step 3 - Data
 
